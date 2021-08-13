@@ -1,0 +1,78 @@
+@font-face {
+    font-family: cupcake;
+    src: url(../fonts/cupcake.otf);
+}
+
+:root {
+    --brown: #391f01;
+    --brown-opaque: rgba(57, 31, 1, 0.7);
+    --orange: rgba(252, 142, 97, 0.3);
+    --heavy-orange: rgba(248, 133, 82);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar div {
+    display: inline-block;
+}
+
+#nav-img {
+    width: 500px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+.links {
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    word-wrap: break-word;
+}
+
+.links a {
+    margin-right: 0.5rem;
+    border: 1px;
+    border-color: var(--orange);
+    border-radius: 5px;
+    background-color: var(--orange);
+    padding: 10px;
+    color: var(--brown);
+}
+
+.links a:hover {
+    color: var(--brown-opaque);
+}
+
+.header-content {
+    height: 450px;
+    background-image: url(../resources/main-background.jpg);
+    background-size: cover;
+    background-position-x: 25%;
+    background-position-y: 38%;
+    margin-left: -10px;
+    margin-right: -10px;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.inside-header {
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px solid white;
+    backdrop-filter: blur(8px);
+}
+
+.inside-header h1 {
+    font-size: 5em;
+    font-family: cupcake;
+}
