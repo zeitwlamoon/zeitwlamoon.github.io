@@ -12,14 +12,10 @@
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
     place-items: center;
     word-wrap: break-word;
     padding: 3rem 0;
-}
-
-.grid-item {
-    width: 95%;
 }
 
 .half-image {
@@ -43,9 +39,9 @@
     line-height: 1.5rem;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1220px) {
     .main-content {
-        width: 900px;
+        width: 850px;
     }
 
     .grid-item p {
