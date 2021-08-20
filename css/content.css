@@ -25,6 +25,7 @@
 
 .grid-item {
     padding-top: 3rem;
+    padding-bottom: 3rem;
     width: 95%;
 }
 
@@ -64,16 +65,17 @@
         display: grid;
         place-items: center;
         justify-content: unset;
+        padding-top: 0.5rem;
     }
 
     #nav-img {
-        width: 350px;
+        width: 500px;
     }
 
     .links {
         margin: 1rem 0;
         position: static;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .inside-header h1 {
@@ -91,12 +93,28 @@
     }
 
     .half-image {
+        width: 30%;
         margin-top: -2.5rem;
     }
 
     .full-image
     {
+        width: 80%;
         margin-bottom: -2.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .half-image {
+        width: 42%;
+    }
+
+    .full-image {
+        width: 100%;
+    }
+
+    #nav-img {
+        width: 340px;
     }
 }
 
