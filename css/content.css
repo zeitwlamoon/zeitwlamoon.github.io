@@ -6,6 +6,10 @@
     background: #392f37;
 }
 
+.brown {
+    background: var(--dark-red);
+}
+
 .main-content {
     width: 1200px;
     margin: auto;
@@ -16,6 +20,10 @@
     place-items: center;
     word-wrap: break-word;
     padding: 3rem 0;
+}
+
+.main-content.centered {
+    grid-template-columns: unset;
 }
 
 .half-image {
