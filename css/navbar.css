@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+
 @font-face {
     font-family: cupcake;
     src: url(../fonts/cupcake.woff);
@@ -20,7 +22,19 @@ body {
     overflow-x: hidden;
     margin: 0;
     color: white;
-    background: var(--main-color)
+    background: var(--main-color);
+}
+
+.arabic {
+    direction: rtl !important;
+}
+
+p.arabic {
+    font-family: 'Dejavu Sans', 'sans-serif' !important;
+}
+
+h1.arabic, h2.arabic {
+    font-family: 'Kufam', 'sans-serif' !important;
 }
 
 .navbar {
@@ -45,6 +59,7 @@ body {
     background-color: var(--dark-orange);
     padding: 10px;
     color: var(--brown);
+    cursor: pointer;
 }
 
 .links a:hover {
