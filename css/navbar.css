@@ -35,11 +35,11 @@ body {
     direction: rtl !important;
 }
 
-p.arabic {
+.arabic p{
     font-family: 'Dejavu Sans', 'sans-serif' !important;
 }
 
-h1.arabic, h2.arabic, h3.arabic {
+.arabic h1, .arabic h2, .arabic h3{
     font-family: 'Kufam', 'sans-serif' !important;
 }
 
