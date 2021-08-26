@@ -16,6 +16,11 @@
     --main-color: #0c1828;
     --wheat: #daccbb;
     --dark-red: #271117;
+    --blue: #0c1828;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,7 +39,7 @@ p.arabic {
     font-family: 'Dejavu Sans', 'sans-serif' !important;
 }
 
-h1.arabic, h2.arabic {
+h1.arabic, h2.arabic, h3.arabic {
     font-family: 'Kufam', 'sans-serif' !important;
 }
 

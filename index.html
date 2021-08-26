@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/content.css" />
     <link rel="stylesheet" href="css/animations.css" />
-    <script src="js/translations/arabic.js"></script>
+    <script src="data/arabic.js"></script>
+    <script src="data/menu.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/translation.js"></script>
 </head>
 
@@ -22,6 +24,7 @@
             </a>
         </div>
         <div class="links">
+            <a id="contact-button" href="#menu-content">Menu</a>
             <a id="contact-button">Contact Us</a>
             <a id="translate-button">العربية</a>
         </div>
@@ -76,9 +79,14 @@
         </div>
     </div>
     <div class="brown">
-        <div class="main-content fade centered">
+        <div class="main-content fade centered" id="menu-content">
             <div class="grid-item">
                 <h2>Menu</h2>
+                <select id="menu-dropdown" class="dropdown">
+                </select>
+            </div>
+            <div class="grid-item" id="menu-div">
+
             </div>
         </div>
     </div>

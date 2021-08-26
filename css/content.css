@@ -10,6 +10,10 @@
     background: var(--dark-red);
 }
 
+.margintop05 {
+    margin-top: 0.5rem;
+}
+
 .main-content {
     width: 1200px;
     margin: auto;
@@ -41,9 +45,36 @@
     color: var(--lemon);
 }
 
+.grid-item h3 {
+    font-family: cupcake;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
 .grid-item p {
     font-size: 1.2rem;
     line-height: 1.5rem;
+}
+
+select {
+    font: inherit;
+    color: white;
+    background: none;
+    border: white 1px solid;
+    padding: 0.5em;
+    transition: all 0.1s ease-in-out;
+}
+
+option {
+    background: var(--dark-red);
+}
+
+.centered .grid-item {
+    width: 50%;
+}
+
+.menu-item {
+    margin-bottom: 3rem;
 }
 
 @media only screen and (max-width: 1220px) {
@@ -132,9 +163,17 @@
         font-size: 1.8rem;
     }
 
+    .grid-item h3 {
+        font-size: 1rem;
+    }
+
     .grid-item p {
         font-size: 0.7rem;
         line-height: 1rem;
+    }
+
+    select {
+        font-size: 0.7rem !important;
     }
 
     .links a {
