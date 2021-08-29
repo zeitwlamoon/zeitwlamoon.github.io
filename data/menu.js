@@ -643,7 +643,7 @@ let menu = {
         name: 'Koshary',
         arabic_name: 'كشري',
         meals: {
-            koshary: {
+            'koshary-normal': {
                 name: 'Koshary',
                 arabic_name: 'كشري',
                 price: '20',
@@ -1263,6 +1263,432 @@ let menu = {
                 name: 'Akawi Cheese',
                 arabic_name: 'جبنة عكاوي',
                 price: '16',
+                description: '',
+                arabic_description: ''
+            }
+        }
+    },
+
+    'hot-drinks': {
+        name: 'Hot Drinks',
+        arabic_name: 'مشروبات ساخنة',
+        meals: {
+            tea: {
+                name: 'Tea',
+                arabic_name: 'شاي',
+                price: '10',
+                description: '',
+                arabic_description: ''
+            },
+
+            'tea-milk': {
+                name: 'Tea with Milk',
+                arabic_name: 'شاي بحليب',
+                price: '10',
+                description: '',
+                arabic_description: ''
+            },
+
+            'turkish-coffee': {
+                name: 'Turkish Coffee',
+                arabic_name: 'قهوة تركي',
+                price: '12',
+                description: '',
+                arabic_description: ''
+            },
+
+            mocha: {
+                name: 'Mocha',
+                arabic_name: 'موكا',
+                price: '17',
+                description: '',
+                arabic_description: ''
+            },
+
+            latte: {
+                name: 'Latte',
+                arabic_name: 'التيه',
+                price: '18',
+                description: '',
+                arabic_description: ''
+            },
+
+            cappuccino: {
+                name: 'Cappuccino',
+                arabic_name: 'كابتشينو',
+                price: '17',
+                description: '',
+                arabic_description: ''
+            },
+
+            espresso: {
+                name: 'Espresso',
+                arabic_name: 'إسبريسو',
+                price: '12',
+                description: '',
+                arabic_description: ''
+            },
+
+            'double-espresso': {
+                name: 'Double Espresso',
+                arabic_name: 'إسبريسو دوبل',
+                price: '14',
+                description: '',
+                arabic_description: ''
+            },
+
+            'hot-chocolate': {
+                name: 'Hot Chocolate',
+                arabic_name: 'شيكوالتة ساخنة',
+                price: '18',
+                description: '',
+                arabic_description: ''
+            },
+
+            cinnamon: {
+                name: 'Cinnamon with Milk',
+                arabic_name: 'قرفة بالحليب',
+                price: '18',
+                description: '',
+                arabic_description: ''
+            },
+
+            sahlab: {
+                name: 'Sahlab',
+                arabic_name: 'سحلب',
+                price: '18',
+                description: '',
+                arabic_description: ''
+            },
+
+            'green-tea': {
+                name: 'Green Tea',
+                arabic_name: 'شاي أخضر',
+                price: '10',
+                description: '',
+                arabic_description: ''
+            },
+
+            'moroccan-tea': {
+                name: 'Moroccan Tea',
+                arabic_name: 'شاي مغربي',
+                price: '22',
+                description: '',
+                arabic_description: ''
+            }
+        }
+    },
+
+    dessert: {
+        name: 'Dessert',
+        arabic_name: 'الحلو',
+        meals: {
+            'rice-pudding': {
+                name: 'Rice Pudding',
+                arabic_name: 'رز بلبن (حليب)',
+                price: '20',
+                description: '',
+                arabic_description: ''
+            },
+
+            muhalabeya: {
+                name: 'Muhalabeya',
+                arabic_name: 'مهلبية',
+                price: '20',
+                description: '',
+                arabic_description: ''
+            },
+
+            'um-ali': {
+                name: 'Um Ali',
+                arabic_name: 'أم علي',
+                price: '25',
+                description: '',
+                arabic_description: ''
+            },
+
+            'fruit-salad': {
+                name: 'Fruit Salad',
+                arabic_name: 'فروت سلاط',
+                price: '32',
+                description: '',
+                arabic_description: ''
+            },
+
+            'fruits-platter': {
+                name: 'Fruits Platter',
+                arabic_name: 'طبق فواكه',
+                price: '44',
+                description: '',
+                arabic_description: ''
+            }
+        }
+    },
+
+    'cold-drinks': {
+        name: 'Cold Drinks',
+        arabic_name: 'مشروبات ساقعة',
+        meals: {
+            'still-water': {
+                name: 'Still Water - Small',
+                arabic_name: 'مياة معدنيه صغيره',
+                price: '6',
+                description: '',
+                arabic_description: ''
+            },
+
+            'sparkling-water': {
+                name: 'Sparkling Water - Small',
+                arabic_name: 'مياة غازية صغيره',
+                price: '12',
+                description: '',
+                arabic_description: ''
+            },
+
+            'soft-drink': {
+                name: 'Soft Drink',
+                arabic_name: 'مشروبات غازية',
+                price: '7',
+                description: 'Pepsi, Seven Up or Miranda',
+                arabic_description: 'بيبسي، سيفن أب، ميرندا'
+            },
+
+            'ice-tea': {
+                name: 'Ice Tea',
+                arabic_name: 'شاي مثلج',
+                price: '9',
+                description: '',
+                arabic_description: ''
+            },
+
+            'orange-juice': {
+                name: 'Orange Juice',
+                arabic_name: 'عصير برتقال',
+                price: '22',
+                description: '',
+                arabic_description: ''
+            },
+
+            'watermelon-juice': {
+                name: 'Watermelon Juice',
+                arabic_name: 'عصير بطيخ',
+                price: '22',
+                description: '',
+                arabic_description: ''
+            },
+
+            avocado: {
+                name: 'Avocado with Honey and Nuts',
+                arabic_name: 'أفوكادو مع عسل و مكسرات',
+                price: '29',
+                description: '',
+                arabic_description: ''
+            },
+
+            'mango-juice': {
+                name: 'Mango Juice',
+                arabic_name: 'عصير مانجو',
+                price: '22',
+                description: '',
+                arabic_description: ''
+            },
+
+            lemon: {
+                name: 'Lemon and Mint',
+                arabic_name: 'ليمون و نعناع',
+                price: '19',
+                description: '',
+                arabic_description: ''
+            },
+
+            'strawberry-juice': {
+                name: 'Strawberry Juice',
+                arabic_name: 'عصير فراولة',
+                price: '22',
+                description: '',
+                arabic_description: ''
+            },
+
+            'banana-milk': {
+                name: 'Banana with Milk',
+                arabic_name: 'موز بالحليب',
+                price: '22',
+                description: '',
+                arabic_description: ''
+            },
+
+            'guava-milk': {
+                name: 'Guava with Milk',
+                arabic_name: 'جوافة بالحليب',
+                price: '22',
+                description: '',
+                arabic_description: ''
+            },
+
+            'pomgrenate-juice': {
+                name: 'Pomgrenate Juice',
+                arabic_name: 'عصير رمان',
+                price: '27',
+                description: '',
+                arabic_description: ''
+            },
+
+            'pineapple-juice': {
+                name: 'Pineapple Juice',
+                arabic_name: 'عصير أناناس',
+                price: '22',
+                description: '',
+                arabic_description: ''
+            },
+
+            cocktails: {
+                name: 'Cocktails',
+                arabic_name: 'عصير كوكتيل',
+                price: '25',
+                description: '',
+                arabic_description: ''
+            },
+
+            karkadeeh: {
+                name: 'Karkadeeh',
+                arabic_name: 'كركادية',
+                price: '19',
+                description: '',
+                arabic_description: ''
+            },
+
+            'passion-mojito': {
+                name: 'Passion Fruit Mojito',
+                arabic_name: 'موهيتو باشون فروت',
+                price: '24',
+                description: '',
+                arabic_description: ''
+            },
+
+            'strawberry-mojito': {
+                name: 'Strawberry Mojito',
+                arabic_name: 'موهيتو فراولة',
+                price: '24',
+                description: '',
+                arabic_description: ''
+            },
+
+            'lemon-mojito': {
+                name: 'Lemon Mint Mojito',
+                arabic_name: 'موهيتو ليمون نعناع',
+                price: '24',
+                description: '',
+                arabic_description: ''
+            },
+
+            'soda-blue': {
+                name: 'Soda Blue',
+                arabic_name: 'صودا بلو',
+                price: '24',
+                description: '',
+                arabic_description: ''
+            },
+
+            'cherry-cola': {
+                name: 'Cherry Cola',
+                arabic_name: 'شيري كوا',
+                price: '24',
+                description: '',
+                arabic_description: ''
+            },
+
+            milkshake: {
+                name: 'Milkshake',
+                arabic_name: 'ميلك شيك',
+                price: '29',
+                description: '',
+                arabic_description: ''
+            },
+
+            'milkshake-mango': {
+                name: 'Milkshake Mango',
+                arabic_name: 'ميلك شيك عصير مانجو',
+                price: '29',
+                description: '',
+                arabic_description: ''
+            },
+
+            'milkshake-strawberry': {
+                name: 'Milkshake Strawberry',
+                arabic_name: '',
+                price: '29',
+                description: '',
+                arabic_description: ''
+            },
+
+            'milkshake-mango': {
+                name: 'Milkshake Mango',
+                arabic_name: 'ميلك شيك فراولة',
+                price: '29',
+                description: '',
+                arabic_description: ''
+            },
+
+            'milkshake-vanilla': {
+                name: 'Milkshake Vanilla',
+                arabic_name: 'ميلك شيك فانيليا',
+                price: '29',
+                description: '',
+                arabic_description: ''
+            },
+
+            'milkshake-chocolate': {
+                name: 'Milkshake Chocolate',
+                arabic_name: 'ميلك شيك شيكوالته',
+                price: '29',
+                description: '',
+                arabic_description: ''
+            },
+
+            'milkshake-oreo': {
+                name: 'Milkshake Oreo',
+                arabic_name: 'ميلك شيك أوريو',
+                price: '29',
+                description: '',
+                arabic_description: ''
+            },
+
+            'milkshake-caramel': {
+                name: 'Milkshake Caramel',
+                arabic_name: 'ميلك شيك كراميل',
+                price: '29',
+                description: '',
+                arabic_description: ''
+            },
+
+            'iced-mocha': {
+                name: 'Iced Mocha',
+                arabic_name: 'ايس موكا',
+                price: '25',
+                description: '',
+                arabic_description: ''
+            },
+
+            'iced-frappuccino': {
+                name: 'Iced Frappuccino',
+                arabic_name: 'ايس فرابيتشيبو',
+                price: '25',
+                description: '',
+                arabic_description: ''
+            },
+
+            'iced-latte': {
+                name: 'Iced Latte',
+                arabic_name: 'ايس التيه',
+                price: '25',
+                description: '',
+                arabic_description: ''
+            },
+
+            'iced-chocolate': {
+                name: 'Iced Chocolate',
+                arabic_name: 'شيكوالتة مثلجة',
+                price: '25',
                 description: '',
                 arabic_description: ''
             }

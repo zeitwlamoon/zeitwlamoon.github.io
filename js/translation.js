@@ -39,7 +39,7 @@
     }
 
     function apply_translation(translation_object) {
-        if (localStorage.getItem('lang') === 'en') {
+        if (localStorage.getItem('lang') !== 'ar') {
             return;
         }
         for (let element_id of Object.keys(translation_object)) {

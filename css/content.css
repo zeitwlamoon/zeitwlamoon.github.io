@@ -63,6 +63,7 @@ select {
     border: white 1px solid;
     padding: 0.5em;
     transition: all 0.1s ease-in-out;
+    width: 70%;
 }
 
 option {
@@ -117,6 +118,10 @@ option {
     .main-content {
         grid-template-columns: 1fr;
         gap: 0rem;
+        width: 90%;
+    }
+
+    .centered .grid-item {
         width: 90%;
     }
 
