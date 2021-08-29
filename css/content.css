@@ -6,8 +6,12 @@
     background: #392f37;
 }
 
-.brown {
+.red {
     background: var(--dark-red);
+}
+
+a {
+    color: var(--lemon);
 }
 
 .margintop05 {
@@ -76,6 +80,25 @@ option {
 
 .menu-item {
     margin-bottom: 3rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a {
+    color: unset;
+}
+
+.icons i {
+    margin: 0 1rem;
+    transition: all ease-in 0.1s;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: var(--lemon);
 }
 
 @media only screen and (max-width: 1220px) {
