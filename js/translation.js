@@ -1,6 +1,6 @@
 (function () {
     let menu_translation;
-    window.onload = function () {
+    (function () {
         let lang = localStorage.getItem('lang');
         document.getElementById('translate-button').addEventListener('click', translate);
         menu_dropdown = document.getElementById('menu-dropdown');
@@ -9,7 +9,7 @@
         if (lang === 'ar') {
             translate();
         }
-    };
+    })();
 
     function get_menu_translation() {
         let menu_translation = {};
@@ -31,7 +31,7 @@
         if (lang === 'en') {
             return location.reload();
         }
-        document.body.classList.add('arabic');
+        document.documentElement.classList.add('arabic');
         document.title = 'زيت وليمون – طعم شارع الحنين';
         document.documentElement.lang = 'ar';
         apply_translation(translation);

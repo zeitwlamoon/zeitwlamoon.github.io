@@ -102,8 +102,6 @@ option {
 
     .links {
         margin: 0.7rem 0;
-        position: static;
-        display: flex;
         font-size: 0.8rem;
     }
 

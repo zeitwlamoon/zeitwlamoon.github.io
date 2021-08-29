@@ -1,6 +1,6 @@
 (function () {
-    window.addEventListener('load', add_events);
-    window.addEventListener('load', populate_dropdown, false);
+    add_events();
+    populate_dropdown();
 
     function add_events() {
         document
