@@ -1339,7 +1339,7 @@ let menu = {
 
             'hot-chocolate': {
                 name: 'Hot Chocolate',
-                arabic_name: 'شيكوالتة ساخنة',
+                arabic_name: 'شيكولاتة ساخنة',
                 price: '18',
                 description: '',
                 arabic_description: ''
@@ -1639,7 +1639,7 @@ let menu = {
 
             'milkshake-chocolate': {
                 name: 'Milkshake Chocolate',
-                arabic_name: 'ميلك شيك شيكوالته',
+                arabic_name: 'ميلك شيك شيكولاته',
                 price: '29',
                 description: '',
                 arabic_description: ''
@@ -1687,7 +1687,7 @@ let menu = {
 
             'iced-chocolate': {
                 name: 'Iced Chocolate',
-                arabic_name: 'شيكوالتة مثلجة',
+                arabic_name: 'شيكولاتة مثلجة',
                 price: '25',
                 description: '',
                 arabic_description: ''
