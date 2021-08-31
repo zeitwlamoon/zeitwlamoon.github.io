@@ -20,7 +20,7 @@ let menu = {
                 price: '55',
                 description:
                     'Falafel Bastirma, Boiled Eggs fried in Ghee, Alexandrian Fava Beans, Cheese and Tomato, Tea',
-                arabic_description: 'فالافل بالبسطرمة، بيض مدحرج، فول إسكندراني، جبنة بالطماطم، شاي'
+                arabic_description: 'فلافل بالبسطرمة، بيض مدحرج، فول إسكندراني، جبنة بالطماطم، شاي'
             },
 
             'full-stomach-breakfast': {
@@ -36,7 +36,7 @@ let menu = {
                 arabic_name: 'فطار تقليدي',
                 price: '35',
                 description: 'Fava Beans with Lemon and Oil, Falafel, Cheese, Tea',
-                arabic_description: 'فول بالزيت والليمون، فالافل، جبنة، شاي'
+                arabic_description: 'فول بالزيت والليمون، فلافل، جبنة، شاي'
             },
 
             'sweet-tooth-breakfast': {
@@ -44,7 +44,7 @@ let menu = {
                 arabic_name: 'الفطار الحلو',
                 price: '55',
                 description: 'Halawa and Cream, Jam, Grilled Halloum, Orange Juice',
-                arabic_description: 'حالوة بالقشطة، مربى، حلوم مشوي، عصير برتقال'
+                arabic_description: 'حلاوة بالقشطة، مربى، حلوم مشوي، عصير برتقال'
             },
 
             'zeit-w-lamoon-breakfast': {
@@ -54,7 +54,7 @@ let menu = {
                 description:
                     'Fava beans Zeit W Lamoon Special, Spicy Stuffed Falafel, Cheesy French Fries, Tea with Mint',
                 arabic_description:
-                    'فول مطعم زيت و ليمون، فالافل محشية (حارة)، بطاطس محمرة بالجبنة، شاي نعناع'
+                    'فول مطعم زيت و ليمون، فلافل محشية (حارة)، بطاطس محمرة بالجبنة، شاي نعناع'
             }
         }
     },
@@ -201,11 +201,11 @@ let menu = {
 
     soup: {
         name: 'Soup',
-        arabic_name: 'شربة',
+        arabic_name: 'شوربة',
         meals: {
             'chicken-cream': {
                 name: 'Chicken Cream and Mushroom',
-                arabic_name: 'شربة كريمة الدجاج و الفطر',
+                arabic_name: 'شوربة كريمة الدجاج و الفطر',
                 price: '22',
                 description: '',
                 arabic_description: ''
@@ -213,7 +213,7 @@ let menu = {
 
             orzo: {
                 name: 'Orzo',
-                arabic_name: 'شربة لسان عصفور',
+                arabic_name: 'شوربة لسان عصفور',
                 price: '14',
                 description: '',
                 arabic_description: ''
@@ -221,7 +221,7 @@ let menu = {
 
             kawarea: {
                 name: 'Kawarea',
-                arabic_name: 'شربة كوارع',
+                arabic_name: 'شوربة كوارع',
                 price: '32',
                 description: '',
                 arabic_description: ''
@@ -229,7 +229,7 @@ let menu = {
 
             'vegetable-soup': {
                 name: 'Vegatable Soup',
-                arabic_name: 'شربة خضار',
+                arabic_name: 'شوربة خضار',
                 price: '18',
                 description: '',
                 arabic_description: ''
@@ -237,7 +237,7 @@ let menu = {
 
             'pigeon-soup': {
                 name: 'Pigeon Soup',
-                arabic_name: 'شربة حمام',
+                arabic_name: 'شوربة حمام',
                 price: '35',
                 description: '',
                 arabic_description: ''
@@ -387,7 +387,7 @@ let menu = {
 
             'labaneh-zaatar': {
                 name: 'Labaneh and Zaatar',
-                arabic_name: 'لبنة وزعتز',
+                arabic_name: 'لبنة وزعتر',
                 price: '8 - 16',
                 description: '',
                 arabic_description: ''
