@@ -1307,7 +1307,7 @@ let menu = {
 
             latte: {
                 name: 'Latte',
-                arabic_name: 'التيه',
+                arabic_name: 'لاتيه',
                 price: '18',
                 description: '',
                 arabic_description: ''
@@ -1615,14 +1615,6 @@ let menu = {
 
             'milkshake-strawberry': {
                 name: 'Milkshake Strawberry',
-                arabic_name: '',
-                price: '29',
-                description: '',
-                arabic_description: ''
-            },
-
-            'milkshake-mango': {
-                name: 'Milkshake Mango',
                 arabic_name: 'ميلك شيك فراولة',
                 price: '29',
                 description: '',
@@ -1679,7 +1671,7 @@ let menu = {
 
             'iced-latte': {
                 name: 'Iced Latte',
-                arabic_name: 'ايس التيه',
+                arabic_name: 'ايس لاتيه',
                 price: '25',
                 description: '',
                 arabic_description: ''
