@@ -807,7 +807,7 @@ let menu = {
 
             'chicken-curry': {
                 name: 'Chicken Curry with Pineapple',
-                arabic_name: 'دجاج بالكاري و األناناس',
+                arabic_name: 'دجاج بالكاري و الأناناس',
                 price: '50',
                 description: '',
                 arabic_description: ''
