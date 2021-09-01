@@ -18,5 +18,6 @@ let translation = {
     phone: 'الهاتف: ',
     address: 'العنوان: ',
     'phone-number': '٩٧١٥٠٤٥٦٣٤٥١+',
-    'address-name': 'سيتي سنتر معيصم دبي، الإمارات العربية المتحدة'
+    'address-name': 'سيتي سنتر معيصم دبي، الإمارات العربية المتحدة',
+    'download-pdf': 'تحميل PDF'
 };

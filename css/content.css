@@ -35,7 +35,7 @@
     margin-bottom: 0;
 }
 
-.grid-item p {
+.grid-item p, .main-button {
     font-size: 1.2rem;
     line-height: 1.5rem;
 }
@@ -81,12 +81,31 @@ option {
     color: var(--lemon);
 }
 
+.main-button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+.main-button:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
 @media only screen and (max-width: 1220px) {
     .main-content {
         width: 850px;
     }
 
-    .grid-item p {
+    .grid-item p, .main-button {
         font-size: 1rem;
     }
 }
@@ -173,7 +192,7 @@ option {
         font-size: 1rem;
     }
 
-    .grid-item p {
+    .grid-item p, .main-button {
         font-size: 0.7rem;
         line-height: 1rem;
     }
