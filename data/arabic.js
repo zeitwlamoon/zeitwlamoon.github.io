@@ -15,8 +15,6 @@ let translation = {
     suggestions:
         'لو عندكم إقتراح أو سؤال أو حاجة مضيقاكم، إبعتولنا على طول. <a href="mailto:info@zeitwlamoon.com">info@zeitwlamoon.com</a>',
     'our-best': 'سعادتكم من سعادتنا!',
-    phone: 'الهاتف: ',
-    address: 'العنوان: ',
     'phone-number': '٩٧١٥٠٤٥٦٣٤٥١+',
     'address-name': 'سيتي سنتر معيصم دبي، الإمارات العربية المتحدة',
     'download-pdf': 'تحميل PDF'
