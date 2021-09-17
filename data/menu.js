@@ -19,8 +19,8 @@ let menu = {
                 arabic_name: 'فطار إسكندراني',
                 price: '55',
                 description:
-                    'Falafel Bastirma, Boiled Eggs fried in Ghee, Alexandrian Fava Beans, Cheese and Tomato, Tea',
-                arabic_description: 'فلافل بالبسطرمة، بيض مدحرج، فول إسكندراني، جبنة بالطماطم، شاي'
+                    'Falafel Bastirma, Boiled Eggs fried in Ghee, Alexandrian Fava Beans, Tea',
+                arabic_description: 'فلافل بالبسطرمة، بيض مدحرج، فول إسكندراني، شاي'
             },
 
             'full-stomach-breakfast': {
@@ -50,11 +50,11 @@ let menu = {
             'zeit-w-lamoon-breakfast': {
                 name: 'Zeit W Lamoon Breakfast',
                 arabic_name: 'فطار زيت و ليمون',
-                price: '55',
+                price: '65',
                 description:
-                    'Fava beans Zeit W Lamoon Special, Spicy Stuffed Falafel, Cheesy French Fries, Tea with Mint',
+                    'Fava beans Zeit W Lamoon Special, Cheese and Tomato, Spicy Stuffed Falafel, Cheesy French Fries, Tea with Mint',
                 arabic_description:
-                    'فول مطعم زيت و ليمون، فلافل محشية (حارة)، بطاطس محمرة بالجبنة، شاي نعناع'
+                    'فول مطعم زيت و ليمون، فلافل محشية (حارة)، بطاطس محمرة بالجبنة، شاي نعناع، جبنة بالطماطم'
             }
         }
     },
@@ -74,7 +74,7 @@ let menu = {
             hummus: {
                 name: 'Hummus',
                 arabic_name: 'حمص',
-                price: '16',
+                price: '18',
                 description: '',
                 arabic_description: ''
             },
@@ -144,7 +144,7 @@ let menu = {
             'green-salad': {
                 name: 'Green Salad',
                 arabic_name: 'سلطة بلدي',
-                price: '18',
+                price: '22',
                 description: '',
                 arabic_description: ''
             },
@@ -152,7 +152,7 @@ let menu = {
             'caesar-salad': {
                 name: 'Caesar Salad',
                 arabic_name: 'سلطة سيزر',
-                price: '25',
+                price: '35',
                 description: '',
                 arabic_description: ''
             },
@@ -160,7 +160,7 @@ let menu = {
             taboulah: {
                 name: 'Taboulah',
                 arabic_name: 'تبولة',
-                price: '18',
+                price: '24',
                 description: '',
                 arabic_description: ''
             },
@@ -168,7 +168,7 @@ let menu = {
             fattouch: {
                 name: 'Fattouch',
                 arabic_name: 'فتوش',
-                price: '18',
+                price: '24',
                 description: '',
                 arabic_description: ''
             },
@@ -184,7 +184,7 @@ let menu = {
             'yoghurt-salad-cucumber': {
                 name: 'Yoghurt Salad with Cucumber',
                 arabic_name: 'سلطة زبادي بالخيار',
-                price: '12',
+                price: '16',
                 description: '',
                 arabic_description: ''
             },
@@ -192,7 +192,7 @@ let menu = {
             'yoghurt-salad-apple': {
                 name: 'Yoghurt Salad with Apple and Honey',
                 arabic_name: 'سلطة زبادي بالعسل و التفاح',
-                price: '17',
+                price: '20',
                 description: '',
                 arabic_description: ''
             }
@@ -206,7 +206,7 @@ let menu = {
             'chicken-cream': {
                 name: 'Chicken Cream and Mushroom',
                 arabic_name: 'شوربة كريمة الدجاج و الفطر',
-                price: '22',
+                price: '25',
                 description: '',
                 arabic_description: ''
             },
@@ -214,7 +214,7 @@ let menu = {
             orzo: {
                 name: 'Orzo',
                 arabic_name: 'شوربة لسان عصفور',
-                price: '14',
+                price: '15',
                 description: '',
                 arabic_description: ''
             },
@@ -230,7 +230,7 @@ let menu = {
             'vegetable-soup': {
                 name: 'Vegatable Soup',
                 arabic_name: 'شوربة خضار',
-                price: '18',
+                price: '20',
                 description: '',
                 arabic_description: ''
             },
@@ -252,7 +252,7 @@ let menu = {
             falafel: {
                 name: 'Falafel (Sandwich - Plate)',
                 arabic_name: 'فلافل (سندويتش - طبق)',
-                price: '8 - 16',
+                price: '10 - 16',
                 description: '',
                 arabic_description: ''
             },
@@ -260,7 +260,7 @@ let menu = {
             'stuffed-falafel': {
                 name: 'Stuffed Falafel',
                 arabic_name: 'فلافل محشية',
-                price: '9 - 19',
+                price: '11 - 19',
                 description: '',
                 arabic_description: ''
             },
@@ -268,7 +268,7 @@ let menu = {
             'falafel-bastirma': {
                 name: 'Falafel with Bastirma',
                 arabic_name: 'فلافل بسطرمة',
-                price: '11 - 21',
+                price: '13 - 21',
                 description: '',
                 arabic_description: ''
             },
@@ -276,7 +276,7 @@ let menu = {
             'beans-oil': {
                 name: 'Fava Beans with Oil',
                 arabic_name: 'فول بالزيت',
-                price: '8 - 16',
+                price: '10 - 16',
                 description: '',
                 arabic_description: ''
             },
@@ -284,7 +284,7 @@ let menu = {
             'beans-sauce': {
                 name: 'Fava Beans with Red Sauce',
                 arabic_name: 'فول بالصلصة',
-                price: '8 - 16',
+                price: '10 - 16',
                 description: '',
                 arabic_description: ''
             },
@@ -292,7 +292,7 @@ let menu = {
             'beans-sausage': {
                 name: 'Fava Beans with Sausage',
                 arabic_name: 'فول بالسجق',
-                price: '12 - 22',
+                price: '13 - 22',
                 description: '',
                 arabic_description: ''
             },
@@ -300,7 +300,7 @@ let menu = {
             'beans-ghee': {
                 name: 'Fava Beans with Ghee',
                 arabic_name: 'فول بالسمنة',
-                price: '8 - 16',
+                price: '10 - 16',
                 description: '',
                 arabic_description: ''
             },
@@ -308,7 +308,7 @@ let menu = {
             'beans-alexandian': {
                 name: 'Alexandrian Fava Beans',
                 arabic_name: 'فول إسكندراني',
-                price: '8 - 16',
+                price: '10 - 16',
                 description: '',
                 arabic_description: ''
             },
@@ -316,7 +316,7 @@ let menu = {
             'beans-zwl': {
                 name: 'Fava Beans Zeit w Lamoon Style',
                 arabic_name: 'فول مطعم زيت وليمون',
-                price: '8 - 16',
+                price: '10 - 16',
                 description: '',
                 arabic_description: ''
             },
@@ -324,7 +324,7 @@ let menu = {
             eggplant: {
                 name: 'Eggplant with Vinegar and Garlic',
                 arabic_name: 'باذنجان بالخل والثوم',
-                price: '11 - 22',
+                price: '12 - 22',
                 description: '',
                 arabic_description: ''
             },
@@ -337,18 +337,10 @@ let menu = {
                 arabic_description: ''
             },
 
-            'beans-alexandian': {
-                name: 'Alexandrian Fava Beans',
-                arabic_name: 'فول إسكندراني',
-                price: '8 - 16',
-                description: '',
-                arabic_description: ''
-            },
-
             'egg-bastirma': {
                 name: 'Egg with Bastirma',
                 arabic_name: 'بيض بالبسطرمة',
-                price: '14 - 24',
+                price: '15 - 27',
                 description: '',
                 arabic_description: ''
             },
@@ -356,7 +348,7 @@ let menu = {
             shakshouka: {
                 name: 'Shakshouka',
                 arabic_name: 'شكشوكة',
-                price: '12 - 22',
+                price: '14 - 24',
                 description: '',
                 arabic_description: ''
             },
@@ -364,7 +356,7 @@ let menu = {
             'mashed-potato': {
                 name: 'Mashed Potato',
                 arabic_name: 'بطاطس مهروسة',
-                price: '8 - 16',
+                price: '10 - 16',
                 description: '',
                 arabic_description: ''
             },
@@ -372,7 +364,7 @@ let menu = {
             'fries-cheese': {
                 name: 'French Fries with Cheese',
                 arabic_name: 'بطاطس محمرة بالجبنة',
-                price: '11 - 21',
+                price: '12 - 21',
                 description: '',
                 arabic_description: ''
             },
@@ -380,7 +372,7 @@ let menu = {
             'cheese-tomato': {
                 name: 'Cheese and Tomato',
                 arabic_name: 'جبنة و طماطم',
-                price: '8 - 16',
+                price: '10 - 16',
                 description: '',
                 arabic_description: ''
             },
@@ -388,7 +380,7 @@ let menu = {
             'labaneh-zaatar': {
                 name: 'Labaneh and Zaatar',
                 arabic_name: 'لبنة وزعتر',
-                price: '8 - 16',
+                price: '10 - 16',
                 description: '',
                 arabic_description: ''
             },
@@ -396,7 +388,7 @@ let menu = {
             'baba-ghanouj-street': {
                 name: 'Baba Ghanouj',
                 arabic_name: 'بابا غنوج',
-                price: '12 - 22',
+                price: '14 - 22',
                 description: '',
                 arabic_description: ''
             },
@@ -404,7 +396,7 @@ let menu = {
             sakalans: {
                 name: 'Sakalans',
                 arabic_name: 'سكالانس',
-                price: '14',
+                price: '17',
                 description: 'Halawa with Cream',
                 arabic_description: 'حلاوة بالقشطة'
             },
@@ -412,7 +404,7 @@ let menu = {
             dynamite: {
                 name: 'Dynamite',
                 arabic_name: 'ديناميت',
-                price: '14',
+                price: '17',
                 description: 'Fava Beans, Boiled Eggs, Eggplant, Falafel and Fries',
                 arabic_description: 'فول، بيض مسلوق، فلافل، باذنجان، بطاطس محمرة'
             },
@@ -420,7 +412,7 @@ let menu = {
             'fried-mix': {
                 name: 'Fried Mix',
                 arabic_name: 'مقالي مشكلة',
-                price: '12 - 26',
+                price: '15 - 27',
                 description: 'Cauliflower, Eggplant, Fries',
                 arabic_description: 'قرنبيط، باذنجان، بطاطس'
             },
@@ -452,7 +444,7 @@ let menu = {
             'breaded-kawarea': {
                 name: 'Breaded Kawarea',
                 arabic_name: 'كوارع بانيه',
-                price: '18 - 39',
+                price: '20 - 39',
                 description: '',
                 arabic_description: ''
             }
@@ -490,7 +482,7 @@ let menu = {
             kofta: {
                 name: 'Kofta',
                 arabic_name: 'كفتة لحم',
-                price: '24',
+                price: '26',
                 description: '',
                 arabic_description: ''
             },
@@ -506,7 +498,7 @@ let menu = {
             'grilled-meat': {
                 name: 'Grilled Meat',
                 arabic_name: 'لحم مشوي',
-                price: '24',
+                price: '28',
                 description: '',
                 arabic_description: ''
             },
@@ -514,7 +506,7 @@ let menu = {
             tarb: {
                 name: 'Tarb',
                 arabic_name: 'طرب',
-                price: '24',
+                price: '27',
                 description: '',
                 arabic_description: ''
             },
@@ -546,7 +538,7 @@ let menu = {
             hawawshy: {
                 name: 'Hawawshy',
                 arabic_name: 'حواوشي',
-                price: '35',
+                price: '37',
                 description: '',
                 arabic_description: ''
             }
@@ -590,7 +582,7 @@ let menu = {
             },
 
             'beef-shawarma-sandwich-f': {
-                name: 'Beef Shawarma Sandwich with Fries',
+                name: 'Beef Shawarma Sandwich with Fries (Saj Bread)',
                 arabic_name: 'شاورما لحم مع بطاطس',
                 price: '39',
                 description: 'Saj Bread',
@@ -598,7 +590,7 @@ let menu = {
             },
 
             'chicken-shawarma-sandwich-f': {
-                name: 'Chicken Shawarma Sandwich with Fries',
+                name: 'Chicken Shawarma Sandwich with Fries (Saj Bread)',
                 arabic_name: 'شاورما دجاج مع بطاطس',
                 price: '37',
                 description: 'Saj Bread',
@@ -646,7 +638,7 @@ let menu = {
             'koshary-normal': {
                 name: 'Koshary',
                 arabic_name: 'كشري',
-                price: '20',
+                price: '22',
                 description: '',
                 arabic_description: ''
             },
@@ -654,7 +646,7 @@ let menu = {
             'koshary-livers': {
                 name: 'Koshary with Livers',
                 arabic_name: 'كشري بالكبدة',
-                price: '30',
+                price: '33',
                 description: '',
                 arabic_description: ''
             },
@@ -662,7 +654,7 @@ let menu = {
             'koshary-shawarma': {
                 name: 'Koshary with Shawarma',
                 arabic_name: 'كشري بالشاورما',
-                price: '30',
+                price: '33',
                 description: '',
                 arabic_description: ''
             },
@@ -670,7 +662,7 @@ let menu = {
             'koshary-sausage': {
                 name: 'Koshary with Sausage',
                 arabic_name: 'كشري بالسجق',
-                price: '30',
+                price: '33',
                 description: '',
                 arabic_description: ''
             },
@@ -678,7 +670,7 @@ let menu = {
             'koshary-meat': {
                 name: 'Koshary with Meat',
                 arabic_name: 'كشري باللحم المفروم',
-                price: '30',
+                price: '33',
                 description: '',
                 arabic_description: ''
             }
@@ -692,7 +684,7 @@ let menu = {
             bolognese: {
                 name: 'Spaghetti Bolognese',
                 arabic_name: 'سباجيتي بولونيز',
-                price: '30',
+                price: '38',
                 description: '',
                 arabic_description: ''
             },
@@ -700,7 +692,7 @@ let menu = {
             'white-sauce': {
                 name: 'White Sauce Pasta with Chicken and Mushroom',
                 arabic_name: 'مكرونة المشروم و الدجاج بصوص الكريمة',
-                price: '34',
+                price: '43',
                 description: '',
                 arabic_description: ''
             },
@@ -708,7 +700,7 @@ let menu = {
             negresco: {
                 name: 'Chicken Negresco Pasta',
                 arabic_name: 'نجريسكو',
-                price: '30',
+                price: '38',
                 description: '',
                 arabic_description: ''
             },
@@ -716,7 +708,7 @@ let menu = {
             bashamel: {
                 name: 'Egyptian Style Bechamel Pasta',
                 arabic_name: 'مكرونة باشاميل',
-                price: '35',
+                price: '38',
                 description: '',
                 arabic_description: ''
             }
@@ -856,15 +848,7 @@ let menu = {
             'lamb-mouza': {
                 name: 'Tagin Lamb Mouza',
                 arabic_name: 'طاجن موزة ضاني',
-                price: '65',
-                description: '',
-                arabic_description: ''
-            },
-
-            'veal-mouza': {
-                name: 'Tagin Veal Mouza',
-                arabic_name: 'طاجن موزة بتلو',
-                price: '65',
+                price: '70',
                 description: '',
                 arabic_description: ''
             },
@@ -872,7 +856,7 @@ let menu = {
             'lamb-mouza-grilled': {
                 name: 'Grilled Lamb Mouza',
                 arabic_name: 'موزة ضاني مشوية',
-                price: '65',
+                price: '70',
                 description: '',
                 arabic_description: ''
             },
@@ -912,7 +896,7 @@ let menu = {
             'rokak-meat': {
                 name: 'Rokak with Minced Meat',
                 arabic_name: 'رقاق باللحم المفروم',
-                price: '36',
+                price: '38',
                 description: '',
                 arabic_description: ''
             },
@@ -921,6 +905,22 @@ let menu = {
                 name: 'Mombar - Rice Stuffed Sausage',
                 arabic_name: 'ممبار',
                 price: '35',
+                description: '',
+                arabic_description: ''
+            },
+
+            'vine-leaves': {
+                name: 'Vine Leaves Stuffed with Seasoned Rice',
+                arabic_name: 'محشي ورق عنب',
+                price: '30',
+                description: '',
+                arabic_description: ''
+            },
+
+            'stuffed-cabbage': {
+                name: 'Stuffed Cabbage',
+                arabic_name: 'محشي كرنب',
+                price: '30',
                 description: '',
                 arabic_description: ''
             }
@@ -1044,15 +1044,7 @@ let menu = {
             'fatta-lamb': {
                 name: 'Egyptian Style Fatta with Garlic, Vinegar and Lamb Mouza',
                 arabic_name: 'فتة مصري بالخل و الثوم مع موزة ضاني',
-                price: '65',
-                description: '',
-                arabic_description: ''
-            },
-
-            'fatta-veal': {
-                name: 'Egyptian Style Fatta with Garlic, Vinegar and Veal Mouza',
-                arabic_name: 'فتة مصري بالخل و الثوم مع موزة بتلو',
-                price: '65',
+                price: '70',
                 description: '',
                 arabic_description: ''
             },
@@ -1098,7 +1090,7 @@ let menu = {
             'mix-cheese': {
                 name: 'Mix Cheese (Medium - Large)',
                 arabic_name: 'مشكل جبنة (متوسط - كبير)',
-                price: '32 - 60',
+                price: '39 - 70',
                 description: '',
                 arabic_description: ''
             },
@@ -1114,7 +1106,7 @@ let menu = {
             'mix-meat': {
                 name: 'Mix Meat with Cheese',
                 arabic_name: 'مشكل لحم بالجبنة',
-                price: '34 - 65',
+                price: '49 - 88',
                 description: '',
                 arabic_description: ''
             },
@@ -1122,7 +1114,7 @@ let menu = {
             'romy-cheese': {
                 name: 'Romy Cheese',
                 arabic_name: 'جبنة رومي',
-                price: '32 - 60',
+                price: '34 - 61',
                 description: '',
                 arabic_description: ''
             },
@@ -1130,7 +1122,7 @@ let menu = {
             'sausage-cheese': {
                 name: 'Sausage with Cheese',
                 arabic_name: 'سجق وجبنة',
-                price: '34 - 65',
+                price: '49 - 88',
                 description: '',
                 arabic_description: ''
             },
@@ -1146,7 +1138,7 @@ let menu = {
             'chicken-cheese': {
                 name: 'Chicken with Cheese',
                 arabic_name: 'دجاج وجبنة',
-                price: '32 - 60',
+                price: '45 - 81',
                 description: '',
                 arabic_description: ''
             },
@@ -1154,7 +1146,7 @@ let menu = {
             'bastirma-cheese': {
                 name: 'Bastirma with Cheese',
                 arabic_name: 'بسطرمة وجبنة',
-                price: '39 - 75',
+                price: '49 - 88',
                 description: '',
                 arabic_description: ''
             },
@@ -1162,7 +1154,15 @@ let menu = {
             tuna: {
                 name: 'Tuna',
                 arabic_name: 'تونه',
-                price: '34 - 65',
+                price: '42 - 75',
+                description: '',
+                arabic_description: ''
+            },
+
+            'eastern-pizza': {
+                name: 'Eastern pizza',
+                arabic_name: 'بيتزا شرقي',
+                price: '75',
                 description: '',
                 arabic_description: ''
             },
@@ -1284,7 +1284,7 @@ let menu = {
             'tea-milk': {
                 name: 'Tea with Milk',
                 arabic_name: 'شاي بحليب',
-                price: '10',
+                price: '12',
                 description: '',
                 arabic_description: ''
             },
@@ -1300,7 +1300,7 @@ let menu = {
             mocha: {
                 name: 'Mocha',
                 arabic_name: 'موكا',
-                price: '17',
+                price: '22',
                 description: '',
                 arabic_description: ''
             },
@@ -1308,7 +1308,7 @@ let menu = {
             latte: {
                 name: 'Latte',
                 arabic_name: 'لاتيه',
-                price: '18',
+                price: '20',
                 description: '',
                 arabic_description: ''
             },
@@ -1340,7 +1340,7 @@ let menu = {
             'hot-chocolate': {
                 name: 'Hot Chocolate',
                 arabic_name: 'شيكولاتة ساخنة',
-                price: '18',
+                price: '25',
                 description: '',
                 arabic_description: ''
             },
@@ -1402,7 +1402,7 @@ let menu = {
             'um-ali': {
                 name: 'Um Ali',
                 arabic_name: 'أم علي',
-                price: '25',
+                price: '27',
                 description: '',
                 arabic_description: ''
             },
@@ -1437,18 +1437,10 @@ let menu = {
                 arabic_description: ''
             },
 
-            'sparkling-water': {
-                name: 'Sparkling Water - Small',
-                arabic_name: 'مياة غازية صغيره',
-                price: '12',
-                description: '',
-                arabic_description: ''
-            },
-
             'soft-drink': {
                 name: 'Soft Drink',
                 arabic_name: 'مشروبات غازية',
-                price: '7',
+                price: '11',
                 description: 'Pepsi, Seven Up or Miranda',
                 arabic_description: 'بيبسي، سيفن أب، ميرندا'
             },
@@ -1456,7 +1448,7 @@ let menu = {
             'ice-tea': {
                 name: 'Ice Tea',
                 arabic_name: 'شاي مثلج',
-                price: '9',
+                price: '12',
                 description: '',
                 arabic_description: ''
             },
@@ -1464,7 +1456,7 @@ let menu = {
             'orange-juice': {
                 name: 'Orange Juice',
                 arabic_name: 'عصير برتقال',
-                price: '22',
+                price: '25',
                 description: '',
                 arabic_description: ''
             },
@@ -1472,7 +1464,7 @@ let menu = {
             'watermelon-juice': {
                 name: 'Watermelon Juice',
                 arabic_name: 'عصير بطيخ',
-                price: '22',
+                price: '25',
                 description: '',
                 arabic_description: ''
             },
@@ -1488,7 +1480,7 @@ let menu = {
             'mango-juice': {
                 name: 'Mango Juice',
                 arabic_name: 'عصير مانجو',
-                price: '22',
+                price: '25',
                 description: '',
                 arabic_description: ''
             },
@@ -1496,7 +1488,7 @@ let menu = {
             lemon: {
                 name: 'Lemon and Mint',
                 arabic_name: 'ليمون و نعناع',
-                price: '19',
+                price: '25',
                 description: '',
                 arabic_description: ''
             },
@@ -1504,7 +1496,7 @@ let menu = {
             'strawberry-juice': {
                 name: 'Strawberry Juice',
                 arabic_name: 'عصير فراولة',
-                price: '22',
+                price: '25',
                 description: '',
                 arabic_description: ''
             },
@@ -1512,7 +1504,7 @@ let menu = {
             'banana-milk': {
                 name: 'Banana with Milk',
                 arabic_name: 'موز بالحليب',
-                price: '22',
+                price: '25',
                 description: '',
                 arabic_description: ''
             },
@@ -1520,7 +1512,7 @@ let menu = {
             'guava-milk': {
                 name: 'Guava with Milk',
                 arabic_name: 'جوافة بالحليب',
-                price: '22',
+                price: '25',
                 description: '',
                 arabic_description: ''
             },
@@ -1528,7 +1520,7 @@ let menu = {
             'pomgrenate-juice': {
                 name: 'Pomgrenate Juice',
                 arabic_name: 'عصير رمان',
-                price: '27',
+                price: '29',
                 description: '',
                 arabic_description: ''
             },
@@ -1536,7 +1528,7 @@ let menu = {
             'pineapple-juice': {
                 name: 'Pineapple Juice',
                 arabic_name: 'عصير أناناس',
-                price: '22',
+                price: '25',
                 description: '',
                 arabic_description: ''
             },
@@ -1544,7 +1536,7 @@ let menu = {
             cocktails: {
                 name: 'Cocktails',
                 arabic_name: 'عصير كوكتيل',
-                price: '25',
+                price: '29',
                 description: '',
                 arabic_description: ''
             },
@@ -1560,7 +1552,7 @@ let menu = {
             'passion-mojito': {
                 name: 'Passion Fruit Mojito',
                 arabic_name: 'موهيتو باشون فروت',
-                price: '24',
+                price: '29',
                 description: '',
                 arabic_description: ''
             },
@@ -1568,7 +1560,7 @@ let menu = {
             'strawberry-mojito': {
                 name: 'Strawberry Mojito',
                 arabic_name: 'موهيتو فراولة',
-                price: '24',
+                price: '27',
                 description: '',
                 arabic_description: ''
             },
@@ -1576,7 +1568,7 @@ let menu = {
             'lemon-mojito': {
                 name: 'Lemon Mint Mojito',
                 arabic_name: 'موهيتو ليمون نعناع',
-                price: '24',
+                price: '27',
                 description: '',
                 arabic_description: ''
             },
@@ -1584,7 +1576,7 @@ let menu = {
             'soda-blue': {
                 name: 'Soda Blue',
                 arabic_name: 'صودا بلو',
-                price: '24',
+                price: '27',
                 description: '',
                 arabic_description: ''
             },
@@ -1592,7 +1584,7 @@ let menu = {
             'cherry-cola': {
                 name: 'Cherry Cola',
                 arabic_name: 'شيري كوا',
-                price: '24',
+                price: '27',
                 description: '',
                 arabic_description: ''
             },
