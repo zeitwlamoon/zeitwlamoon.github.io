@@ -11,13 +11,12 @@
     --brown-opaque: rgba(57, 31, 1, 0.7);
     --orange: rgba(252, 142, 97, 0.3);
     --heavy-orange: rgba(248, 133, 82);
-    --lemon: rgba(176, 146, 112);
+    --lemon: rgb(85, 65, 55);
     --dark-yellow: rgba(190, 170, 133);
     --dark-orange: #ee7f4e78;
-    --main-color: #0c1828;
     --wheat: #daccbb;
     --dark-red: #271117;
-    --blue: #0c1828;
+    --white: #f4f0e6;
 }
 
 html {
@@ -27,21 +26,20 @@ html {
 body {
     overflow-x: hidden;
     margin: 0;
-    color: white;
-    background: var(--main-color);
+    background: var(--white);
     font-family: 'Dejavu Sans';
 }
 
-.blue {
-    background: #0c1828;
+.white {
+    background: var(--white);
 }
 
-.grey {
-    background: #392f37;
+.orange {
+    background: #bf8f4f;
 }
 
-.red {
-    background: var(--dark-red);
+.yellow {
+    background: #ebbf59;
 }
 
 a {

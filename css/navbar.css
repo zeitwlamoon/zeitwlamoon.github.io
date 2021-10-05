@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-    background: var(--wheat);
+    background: var(--white);
     user-select: none;
 }
 
@@ -37,7 +37,7 @@
 
 .header-content {
     height: 450px;
-    background-image: url(../resources/main-background.jpg);
+    background-image: url(../resources/menu/alexandrian-foul.jpg);
     background-size: cover;
     background-position-x: 25%;
     background-position-y: 38%;
@@ -50,8 +50,7 @@
     padding-left: 20px;
     padding-right: 20px;
     border: 4px solid white;
-    backdrop-filter: blur(8px);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .inside-header h1 {

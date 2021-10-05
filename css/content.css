@@ -17,10 +17,16 @@
 .half-image {
     width: 44%;
     margin: 0 0.5rem;
+    object-fit: cover;
+    height: 280px;
+    object-position: 51%;
 }
 
 .full-image {
-    width: 100%;
+    width: 80%;
+    height: 430px;
+    object-fit: cover;
+    object-position: 54%;
 }
 
 .grid-item h2 {
@@ -33,6 +39,7 @@
     font-family: cupcake, cursive;
     font-size: 1.5rem;
     margin-bottom: 0;
+    color: var(--lemon);
 }
 
 .grid-item p, .main-button {
@@ -42,16 +49,11 @@
 
 select {
     font: inherit;
-    color: white;
     background: none;
-    border: white 1px solid;
+    border: 1px solid;
     padding: 0.5em;
     transition: all 0.1s ease-in-out;
     width: 70%;
-}
-
-option {
-    background: var(--dark-red);
 }
 
 .centered .grid-item {
@@ -132,7 +134,7 @@ option {
     }
 
     .header-content {
-        background-position-x: 50%;
+        background-position-x: 45%;
     }
 
     .main-content {
@@ -151,16 +153,19 @@ option {
 
     .full-image {
         width: 80%;
+        height: 380px;
     }
 }
 
 @media only screen and (max-width: 520px) {
     .half-image {
-        width: 42%;
+        width: 44%;
+        height: 200px;
     }
 
     .full-image {
         width: 100%;
+        height: 250px;
     }
 
     #nav-img {
