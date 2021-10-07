@@ -51,6 +51,9 @@ select {
     font: inherit;
     background: none;
     border: 1px solid;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
     padding: 0.5em;
     transition: all 0.1s ease-in-out;
     width: 70%;
@@ -62,6 +65,10 @@ select {
 
 .menu-item {
     margin-bottom: 3rem;
+}
+
+#menu-div img {
+    width: 100%;
 }
 
 .icons {
@@ -86,20 +93,22 @@ select {
 .main-button {
     display: inline-block;
     padding: 0.35em 1.2em;
-    border: 0.1em solid #ffffff;
+    border: 0.1em solid black;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
     font-weight: 300;
-    color: #ffffff;
+    color: black;
     text-align: center;
     transition: all 0.1s;
+    cursor: pointer;
 }
 
 .main-button:hover {
-    color: #000000;
-    background-color: #ffffff;
+    color: var(--white);
+    border-color: var(--lemon);
+    background-color: var(--lemon);
 }
 
 @media only screen and (max-width: 1220px) {
@@ -159,7 +168,7 @@ select {
 
 @media only screen and (max-width: 520px) {
     .half-image {
-        width: 44%;
+        width: 43%;
         height: 200px;
     }
 

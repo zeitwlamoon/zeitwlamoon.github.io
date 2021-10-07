@@ -1,4 +1,4 @@
-let translation = {
+const translation = {
     'translate-button': 'English',
     'contact-button': 'تواصل',
     'menu-button': 'القائمة',

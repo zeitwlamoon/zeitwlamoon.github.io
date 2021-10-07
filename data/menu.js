@@ -1,8 +1,13 @@
-let menu = {
+const menu = {
     breakfast: {
         name: 'Breakfast',
         arabic_name: 'الفطار',
         notes: 'The breakfast is available till 1 PM',
+        images: {
+            'alexandrian-beans': 'فول إسكندراني',
+            'pastrami-falafel': 'فلافل بالبسطرمة',
+            'yogurt-with-apple-and-honey-salad': 'زبادي بالتفاح و العسل'
+        },
         meals: {
             'healthy-breakfast': {
                 name: 'Healthy Breakfast',
@@ -19,7 +24,7 @@ let menu = {
                 arabic_name: 'فطار إسكندراني',
                 price: '55',
                 description:
-                    'Falafel Bastirma, Boiled Eggs fried in Ghee, Alexandrian Fava Beans, Tea',
+                    'Falafel Pastrami, Boiled Eggs fried in Ghee, Alexandrian Fava Beans, Tea',
                 arabic_description: 'فلافل بالبسطرمة، بيض مدحرج، فول إسكندراني، شاي'
             },
 
@@ -27,7 +32,7 @@ let menu = {
                 name: 'Full Stomach Breakfast',
                 arabic_name: 'فطار متين',
                 price: '55',
-                description: 'Fava Beans with Butter, Egg with Bastirma, Cheese, Falafel, Coffee',
+                description: 'Fava Beans with Butter, Egg with Pastrami, Cheese, Falafel, Coffee',
                 arabic_description: 'فول بالزبدة، بيض بالبسطرمة، فلافل بالجبنة، قهوة'
             },
 
@@ -62,6 +67,9 @@ let menu = {
     appetizer: {
         name: 'Appetizer',
         arabic_name: 'مقبلات',
+        images: {
+            'marinated-tomato': 'طماطم متبلة'
+        },
         meals: {
             'baba-ghanouj': {
                 name: 'Baba Ghanouj',
@@ -80,7 +88,7 @@ let menu = {
             },
 
             sambosa: {
-                name: 'Sambosa Cheese and Bastirma',
+                name: 'Sambosa Cheese and Pastrami',
                 arabic_name: 'سمبوسة جبنة و بسطرمة',
                 price: '16',
                 description: '',
@@ -140,6 +148,13 @@ let menu = {
     salad: {
         name: 'Salad',
         arabic_name: 'السلطات',
+        images: {
+            'caesar-salad': 'سلطة سيزر',
+            'rocca-salad': 'سلطة جرجير',
+            'yogurt-with-apple-and-honey-salad': 'سلطة زبادي بالعسل و التفاح',
+            'yogurt-with-cucumber-salad': 'سلطة زبادي بالخيار',
+            tabouleh: 'تبولة'
+        },
         meals: {
             'green-salad': {
                 name: 'Green Salad',
@@ -157,8 +172,8 @@ let menu = {
                 arabic_description: ''
             },
 
-            taboulah: {
-                name: 'Taboulah',
+            tabouleh: {
+                name: 'Tabouleh',
                 arabic_name: 'تبولة',
                 price: '24',
                 description: '',
@@ -248,6 +263,14 @@ let menu = {
     street: {
         name: 'Street Food Corner',
         arabic_name: 'يالا شعبي',
+        images: {
+            'pastrami-falafel': 'فلافل بسطرمة',
+            'sausage-beans': 'فول بالسجق',
+            'red-sauce-beans': 'فول بالصلصة',
+            'eggplant-with-vinegar-and-garlic': 'باذنجان بالخل والثوم',
+            'breaded-kawarea': 'كوارع بانيه',
+            mesakaa: 'مسقعة'
+        },
         meals: {
             falafel: {
                 name: 'Falafel (Sandwich - Plate)',
@@ -265,8 +288,8 @@ let menu = {
                 arabic_description: ''
             },
 
-            'falafel-bastirma': {
-                name: 'Falafel with Bastirma',
+            'falafel-pastrami': {
+                name: 'Falafel with Pastrami',
                 arabic_name: 'فلافل بسطرمة',
                 price: '13 - 21',
                 description: '',
@@ -329,16 +352,16 @@ let menu = {
                 arabic_description: ''
             },
 
-            mosakaa: {
-                name: 'Mosakaa',
+            mesakaa: {
+                name: 'Mesakaa',
                 arabic_name: 'مسقعة',
                 price: '12 - 24',
                 description: '',
                 arabic_description: ''
             },
 
-            'egg-bastirma': {
-                name: 'Egg with Bastirma',
+            'egg-pastrami': {
+                name: 'Egg with Pastrami',
                 arabic_name: 'بيض بالبسطرمة',
                 price: '15 - 27',
                 description: '',
@@ -454,6 +477,9 @@ let menu = {
     sandwiches: {
         name: 'Zeit W Lamoon Sandwiches',
         arabic_name: 'سندوتشات زيت و ليمون',
+        images: {
+            hawawshi: 'حواوشي'
+        },
         meals: {
             'grilled-sausage': {
                 name: 'Grilled Sausage',
@@ -535,8 +561,8 @@ let menu = {
                 arabic_description: ''
             },
 
-            hawawshy: {
-                name: 'Hawawshy',
+            hawawshi: {
+                name: 'Hawawshi',
                 arabic_name: 'حواوشي',
                 price: '37',
                 description: '',
@@ -548,6 +574,10 @@ let menu = {
     shawarma: {
         name: 'Shawarma',
         arabic_name: 'شاورما',
+        images: {
+            'beef-shawerma-sandwich': 'شاورما لحم',
+            'egyptian-style-beef-shawarma-in-a-bun': 'شاورما لحم عيش كايزر'
+        },
         meals: {
             'beef-shawarma-sandwich-s': {
                 name: 'Beef Shawarma Sandwich (small)',
@@ -634,6 +664,12 @@ let menu = {
     koshary: {
         name: 'Koshary',
         arabic_name: 'كشري',
+        images: {
+            koshary: 'كشري',
+            'liver-koshary': 'كشري بالكبدة',
+            'beef-shawerma-koshary': '(دجاج) كشري بالشاورما',
+            'chicken-shawerma-koshary': 'كشري بالشاورما (لحم)'
+        },
         meals: {
             'koshary-normal': {
                 name: 'Koshary',
@@ -680,6 +716,11 @@ let menu = {
     pasta: {
         name: 'Pasta',
         arabic_name: 'مكرونات',
+        images: {
+            'white-sauce-pasta-with-chicken-and-mushroom': 'مكرونة المشروم و الدجاج بصوص الكريمة',
+            'spaghetti-bolognese': 'سباجيتي بولونيز',
+            'egyptian-bechamel': 'مكرونة باشاميل'
+        },
         meals: {
             bolognese: {
                 name: 'Spaghetti Bolognese',
@@ -718,6 +759,9 @@ let menu = {
     rice: {
         name: 'Rice',
         arabic_name: 'أرز',
+        images: {
+            'liver-rice': 'أرز بالكبد'
+        },
         meals: {
             'white-rice': {
                 name: 'White Rice',
@@ -763,7 +807,16 @@ let menu = {
 
     'main-dish': {
         name: 'Main Dish',
-        arabic_name: 'األطباق الرئيسية',
+        arabic_name: 'الأطباق الرئيسية',
+        images: {
+            'potato-tajine': 'بطاطس في الفرن',
+            molokheya: 'ملوخية',
+            'orzo-with-meat-tajine': 'طاجن لسان عصفور باللحم',
+            'akawi-with-onion-tajine': 'طاجن عكاوي بالبصل',
+            'egyptian-beef-piccata-with-mushroom': 'بيكاتا لحم صوص مشروم',
+            'stuffed-pigeon': 'حمام محشي',
+            mombar: 'ممبار'
+        },
         meals: {
             'oven-potato': {
                 name: 'Oven Potato',
@@ -814,7 +867,7 @@ let menu = {
             },
 
             'orzo-chicken': {
-                name: 'Tagin Orzo with Chicken',
+                name: 'Tajine Orzo with Chicken',
                 arabic_name: 'طاجن لسان عصفور بالدجاج',
                 price: '40',
                 description: '',
@@ -822,7 +875,7 @@ let menu = {
             },
 
             'orzo-meat': {
-                name: 'Tagin Orzo with Meat',
+                name: 'Tajine Orzo with Meat',
                 arabic_name: 'طاجن لسان عصفور باللحم',
                 price: '45',
                 description: '',
@@ -830,7 +883,7 @@ let menu = {
             },
 
             'orzo-akawi': {
-                name: 'Tagin Orzo with Akawi',
+                name: 'Tajine Orzo with Akawi',
                 arabic_name: 'طاجن لسان عصفور بالعكاوي',
                 price: '45',
                 description: '',
@@ -838,7 +891,7 @@ let menu = {
             },
 
             'akawi-onion': {
-                name: 'Tagin Akawi with Onion',
+                name: 'Tajine Akawi with Onion',
                 arabic_name: 'طاجن عكاوي بالبصل',
                 price: '45',
                 description: '',
@@ -846,7 +899,7 @@ let menu = {
             },
 
             'lamb-mouza': {
-                name: 'Tagin Lamb Mouza',
+                name: 'Tajine Lamb Mouza',
                 arabic_name: 'طاجن موزة ضاني',
                 price: '70',
                 description: '',
@@ -930,6 +983,10 @@ let menu = {
     grill: {
         name: 'From The Grill',
         arabic_name: 'من الشواية',
+        images: {
+            'shish-tawook': 'شيش طاووق',
+            tarb: 'طرب'
+        },
         meals: {
             'meat-kofta': {
                 name: 'Meat Kofta (Plate - 0.5 kg - 1 kg)',
@@ -1029,52 +1086,57 @@ let menu = {
         }
     },
 
-    fatta: {
-        name: 'Fatta',
+    fatteh: {
+        name: 'Fatteh',
         arabic_name: 'فتة',
+        images: {
+            'chicken-fatteh-with-yogurt': 'فتة فراخ بالزبادي',
+            'egyptian-style-fatteh-with-garlic-and-vinegar-and-lamb-shank':
+                'فتة مصري بالخل و الثوم مع موزة ضاني'
+        },
         meals: {
-            'fatta-plain': {
-                name: 'Egyptian Style Fatta with Garlic and Vinegar (Plain)',
+            'fatteh-plain': {
+                name: 'Egyptian Style Fatteh with Garlic and Vinegar (Plain)',
                 arabic_name: 'فتة مصري بالخل و الثوم (سادة)',
                 price: '30',
                 description: '',
                 arabic_description: ''
             },
 
-            'fatta-lamb': {
-                name: 'Egyptian Style Fatta with Garlic, Vinegar and Lamb Mouza',
+            'fatteh-lamb': {
+                name: 'Egyptian Style Fatteh with Garlic, Vinegar and Lamb Mouza',
                 arabic_name: 'فتة مصري بالخل و الثوم مع موزة ضاني',
                 price: '70',
                 description: '',
                 arabic_description: ''
             },
 
-            'fatta-meat': {
-                name: 'Egyptian Style Fatta with Garlic, Vinegar and Meat Cubes',
+            'fatteh-meat': {
+                name: 'Egyptian Style Fatteh with Garlic, Vinegar and Meat Cubes',
                 arabic_name: 'فتة مصري بالخل و الثوم مع قطع لحم',
                 price: '60',
                 description: '',
                 arabic_description: ''
             },
 
-            'fatta-kawarea': {
-                name: 'Kawarea Fatta',
+            'fatteh-kawarea': {
+                name: 'Kawarea Fatteh',
                 arabic_name: 'فتة كوارع',
                 price: '55',
                 description: '',
                 arabic_description: ''
             },
 
-            'fatta-chicken': {
-                name: 'Chicken Fatta with Yoghurt',
+            'fatteh-chicken': {
+                name: 'Chicken Fatteh with Yoghurt',
                 arabic_name: 'فتة فراخ بالزبادي',
                 price: '50',
                 description: '',
                 arabic_description: ''
             },
 
-            'fatta-shawarma': {
-                name: 'Shawrma Fatta',
+            'fatteh-shawarma': {
+                name: 'Shawrma Fatteh',
                 arabic_name: 'فتة شاورما',
                 price: '50',
                 description: '',
@@ -1086,6 +1148,10 @@ let menu = {
     'savory-feteer': {
         name: 'Savory Feteer',
         arabic_name: 'فطير حادق',
+        images: {
+            'mix-cheese-feteer': 'فطير مشكل جبنة',
+            'mix-vegetables-and-cheese-feteer': 'فطير مشكل خضروات مع جبنة'
+        },
         meals: {
             'mix-cheese': {
                 name: 'Mix Cheese (Medium - Large)',
@@ -1143,8 +1209,8 @@ let menu = {
                 arabic_description: ''
             },
 
-            'bastirma-cheese': {
-                name: 'Bastirma with Cheese',
+            'pastrami-cheese': {
+                name: 'Pastrami with Cheese',
                 arabic_name: 'بسطرمة وجبنة',
                 price: '49 - 88',
                 description: '',
@@ -1180,6 +1246,11 @@ let menu = {
     'sweet-feteer': {
         name: 'Sweet Feteer',
         arabic_name: 'فطير حلو',
+        images: {
+            'sugar-feteer': 'فطير سكر',
+            'sugar-and-milk-feteer': 'فطير سكر وحليب',
+            'nutella-feteer': 'فطير نوتيلا'
+        },
         meals: {
             sugar: {
                 name: 'Sugar (Medium - Large)',
@@ -1428,6 +1499,9 @@ let menu = {
     'cold-drinks': {
         name: 'Cold Drinks',
         arabic_name: 'مشروبات ساقعة',
+        images: {
+            'lemon-mint-mojito': 'موهيتو ليمون نعناع'
+        },
         meals: {
             'still-water': {
                 name: 'Still Water - Small',
