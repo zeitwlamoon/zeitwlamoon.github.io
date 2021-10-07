@@ -1,8 +1,17 @@
-(function() {
+(function () {
     function add_events() {
-        document.getElementById('menu-button').addEventListener('click', () => scroll_to('menu-content'));
-        document.getElementById('menu-dropdown').addEventListener('change', () => scroll_to('menu-content'));
-        document.getElementById('contact-button').addEventListener('click', () => scroll_to('contact-us'))
+        document
+            .getElementById('menu-button')
+            .addEventListener('click', () => scroll_to('menu-content'));
+        document
+            .getElementById('menu-dropdown')
+            .addEventListener('change', () => scroll_to('menu-content'));
+        document
+            .getElementById('images-button')
+            .addEventListener('click', () => scroll_to('menu-content'));
+        document
+            .getElementById('contact-button')
+            .addEventListener('click', () => scroll_to('contact-us'));
     }
 
     function scroll_to(element_id) {
