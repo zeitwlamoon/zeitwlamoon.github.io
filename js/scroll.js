@@ -7,9 +7,6 @@
             .getElementById('menu-dropdown')
             .addEventListener('change', () => scroll_to('menu-content'));
         document
-            .getElementById('images-button')
-            .addEventListener('click', () => scroll_to('menu-content'));
-        document
             .getElementById('contact-button')
             .addEventListener('click', () => scroll_to('contact-us'));
     }

@@ -51,6 +51,9 @@ select {
     font: inherit;
     background: none;
     border: 1px solid;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
     padding: 0.5em;
     transition: all 0.1s ease-in-out;
     width: 70%;
@@ -62,6 +65,10 @@ select {
 
 .menu-item {
     margin-bottom: 3rem;
+}
+
+#menu-div img {
+    width: 100%;
 }
 
 .icons {

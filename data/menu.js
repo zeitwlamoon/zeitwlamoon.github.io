@@ -1,4 +1,4 @@
-let menu = {
+const menu = {
     breakfast: {
         name: 'Breakfast',
         arabic_name: 'الفطار',
@@ -807,7 +807,7 @@ let menu = {
 
     'main-dish': {
         name: 'Main Dish',
-        arabic_name: 'األطباق الرئيسية',
+        arabic_name: 'الأطباق الرئيسية',
         images: {
             'potato-tajine': 'بطاطس في الفرن',
             molokheya: 'ملوخية',
