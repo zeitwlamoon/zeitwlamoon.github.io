@@ -1,17 +1,25 @@
 (function () {
     const lang = localStorage.getItem('lang');
-    (function () {
+    (async function () {
         document.getElementById('translate-button').addEventListener('click', (e) => {
             const target_language = (e.target.innerHTML === 'English' && 'en') || 'ar';
             localStorage.setItem('lang', target_language);
             location.reload();
         });
         if (lang === 'ar') {
-            translate();
+            const arabic_req = await fetch('data/arabic.json');
+            if (arabic_req.status >= 400) {
+                return alert('An error has occurred while translating the page');
+            }
+            const translation = await arabic_req.json();
+            translate(translation);
         }
     })();
 
-    function translate() {
+    function translate(translation) {
+        if (!translation) {
+            alert('An error has occurred while translating the page');
+        }
         document.documentElement.classList.add('arabic');
         document.title = 'زيت وليمون – طعم شارع الحنين';
         document.documentElement.lang = 'ar';
