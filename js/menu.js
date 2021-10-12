@@ -1,5 +1,11 @@
-(function () {
+(async function () {
     const language = localStorage.getItem('lang');
+    const menu_req = await fetch('data/menu.json');
+    if (menu_req.status >= 400) {
+        return alert('An error has occurred while fetching the menu.');
+    }
+    const menu = await menu_req.json();
+
     add_events();
     populate_dropdown();
 
