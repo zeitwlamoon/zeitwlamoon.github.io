@@ -19,6 +19,11 @@
     --white: #f4f0e6;
 }
 
+::selection {
+    background-color: #076286;
+    color: white;
+}
+
 html {
     scroll-behavior: smooth;
 }
