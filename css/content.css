@@ -25,8 +25,28 @@
 .full-image {
     width: 80%;
     height: 430px;
-    object-fit: cover;
-    object-position: 54%;
+    background-size: cover;
+    background-position: 54%;
+    background-image: url(../resources/menu/egyptian-style-beef-shawarma-in-a-bun.jpg);
+    display: inline-grid;
+    place-items: center;
+}
+
+.play {
+    padding: calc(var(--title-font-size) / 5);
+    border: solid calc(var(--title-font-size) / 10) var(--white);
+    border-radius: 12px;
+    box-shadow: 2px 2px 16px #212121;
+}
+
+.fa-play {
+    font-size: var(--title-font-size);
+    color: var(--white);
+    opacity: 95%;
+}
+
+.grid-item {
+    width: 100%;
 }
 
 .grid-item h2 {
@@ -42,7 +62,8 @@
     color: var(--lemon);
 }
 
-.grid-item p, .main-button {
+.grid-item p,
+.main-button {
     font-size: 1.2rem;
     line-height: 1.5rem;
 }
@@ -116,7 +137,8 @@ select {
         width: 850px;
     }
 
-    .grid-item p, .main-button {
+    .grid-item p,
+    .main-button {
         font-size: 1rem;
     }
 }
@@ -138,8 +160,8 @@ select {
         font-size: 0.8rem;
     }
 
-    .inside-header h1 {
-        font-size: 2.5rem;
+    :root {
+        --title-font-size: 3rem;
     }
 
     .header-content {
@@ -167,6 +189,9 @@ select {
 }
 
 @media only screen and (max-width: 520px) {
+    :root {
+        --title-font-size: 2.5rem;
+    }
     .half-image {
         width: 43%;
         height: 200px;
@@ -194,8 +219,8 @@ select {
         justify-content: center; */
     }
 
-    .inside-header h1 {
-        font-size: 2rem;
+    :root {
+        --title-font-size: 2rem;
     }
 
     .grid-item h2 {
@@ -206,7 +231,8 @@ select {
         font-size: 1rem;
     }
 
-    .grid-item p, .main-button {
+    .grid-item p,
+    .main-button {
         font-size: 0.7rem;
         line-height: 1rem;
     }

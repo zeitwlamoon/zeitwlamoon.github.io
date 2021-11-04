@@ -55,6 +55,6 @@
 }
 
 .inside-header h1 {
-    font-size: 5rem;
+    font-size: var(--title-font-size);
     font-family: cupcake, cursive;
 }
