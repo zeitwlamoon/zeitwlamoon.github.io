@@ -1,8 +1,87 @@
 {
+    "daily-dish-meal": {
+        "name": "Daily Dish Meal",
+        "arabic_name": "الوجبة اليومية",
+        "notes": "This offer is available every week from Sunday to Thursday, starting at 12:30 PM till 4:00 PM",
+        "arabic_notes": "هذا العرض سارٍ كل الأسبوع من الأحد إلى الخميس بدءاً من الساعة 12:30 ظهراً حتى الساعة 4",
+        "meals": {
+            "lunch-offers": {
+                "name": "<u>Lunch Offers</u>",
+                "arabic_name": "<u>عرض وجبة الغداء</u>",
+                "description": "Green Salad, Orzo Soup, Soft Drink, your choice of the following meals for 45 AED + VAT",
+                "arabic_description": "سلطة خضراء، شوربة لسان عصفور، مشروب غازي، اختيارك من الوجبات التالية ب45 درهم زائد ضريبة القيمة المضافة",
+                "price": ""
+            },
+            "option-1": {
+                "name": "Option 1",
+                "arabic_name": "الاختيار الأول",
+                "description": "Rice, Molokeya and Meat",
+                "arabic_description": "أرز وملوخية مع اللحم",
+                "price": ""
+            },
+            "option-2": {
+                "name": "Option 2",
+                "arabic_name": "الاختيار الثاني",
+                "description": "Rice, Molokeya and Chicken",
+                "arabic_description": "أرز وملوخية مع دجاج",
+                "price": ""
+            },
+            "option-3": {
+                "name": "Option 3",
+                "arabic_name": "الاختيار الثالث",
+                "description": "Rice, Oven Potato and Meat",
+                "arabic_description": "بطاطس في الفرن مع أرز ولحم",
+                "price": ""
+            },
+            "option-4": {
+                "name": "Option 4",
+                "arabic_name": "الاختيار الرابع",
+                "description": "Rice, Oven Potato and Chicken",
+                "arabic_description": "بطاطس في الفرن مع أرز ودجاج",
+                "price": ""
+            },
+            "option-5": {
+                "name": "Option 5",
+                "arabic_name": "الاختيار الخامس",
+                "description": "Rice, Okra and Meat",
+                "arabic_description": "أرز وبامية لحم",
+                "price": ""
+            },
+            "option-6": {
+                "name": "Option 6",
+                "arabic_name": "الاختيار السادس",
+                "description": "Rice, Okra and Chicken",
+                "arabic_description": "أرز وبامية دجاج",
+                "price": ""
+            },
+            "option-7": {
+                "name": "Option 7",
+                "arabic_name": "الاختيار السابع",
+                "description": "Egyptian Style Bechamel Pasta",
+                "arabic_description": "مكرونة بشاميل",
+                "price": ""
+            },
+            "option-8": {
+                "name": "Option 8",
+                "arabic_name": "الاختيار الثامن",
+                "description": "Bolognese Pasta",
+                "arabic_description": "مكرونة سباجيتي باللحم المفروم",
+                "price": ""
+            },
+            "option-9": {
+                "name": "Option 9",
+                "arabic_name": "الاختيار التاسع",
+                "description": "Chicken Escalope",
+                "arabic_description": "دجاج بانيه",
+                "price": ""
+            }
+        }
+    },
     "breakfast": {
         "name": "Breakfast",
         "arabic_name": "الفطار",
         "notes": "The breakfast is available till 1 PM",
+        "arabic_notes": "الفطار متوفر حتى الساعة الواحدة ظهراً",
         "images": {
             "alexandrian-beans": "فول إسكندراني",
             "pastrami-falafel": "فلافل بالبسطرمة",

@@ -22,7 +22,7 @@
             const display_name = (language === 'ar' && arabic_name) || name;
             dropdown.innerHTML += `<option id=${item} value=${item}>${display_name}</option>`;
         }
-        show_menu_item('breakfast');
+        show_menu_item('daily-dish-meal');
     }
 
     function remove_button_area() {
@@ -99,6 +99,10 @@
                 ${price_html}
                 </div>`;
         }
+        (menu_item.notes || menu_item.arabic_notes) &&
+            (menu_div.innerHTML += `<div class="menu-item"><h3>${
+                language === 'ar' ? 'ملحوظات' : 'notes'
+            }</h3><p>${language === 'ar' ? menu_item.arabic_notes : menu_item.notes}</p></div>`);
         remove_button_area();
         show_button_area(item_id);
     }
