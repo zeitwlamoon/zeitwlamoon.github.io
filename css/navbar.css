@@ -20,15 +20,9 @@
 }
 
 .links a {
-    margin-right: 0.5rem;
     border-radius: 5px;
-    background-color: var(--dark-orange);
-    padding: 10px;
     color: var(--brown);
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .links a:hover {

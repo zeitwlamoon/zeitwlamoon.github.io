@@ -16,13 +16,12 @@
 
     <title>Zeit W Lamoon - The Nostalgic Street Taste</title>
     <link rel="shortcut icon" type="image/jpg" href="resources/cropped-favicon-192x192.png" />
+    <link rel="preload" as="style" href="css/arabic-font.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/content.css" />
-    <script src="js/menu.js" defer></script>
     <script src="js/translation.js" defer></script>
-    <script src="js/scroll.js" defer></script>
-    <script src="https://kit.fontawesome.com/09ba362026.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/09ba362026.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
@@ -34,9 +33,7 @@
             </a>
         </div>
         <div class="links">
-            <a id="menu-button">Menu</a>
-            <a id="contact-button">Contact Us</a>
-            <a id="translate-button">العربية</a>
+            <a id="translate-button" >عربي</a>
         </div>
     </nav>
     <div class="header-content">
@@ -45,24 +42,24 @@
         </div>
     </div>
     <div class="white">
-        <div class="main-content">
+        <div class="grid">
             <div class="grid-item">
                 <h2 id="title">Zeit W Lamoon</h2>
                 <p id="who-we-are">
                     Discover Egypt through the eyes of Zeit W Lamoon, the Dubai-based destination to a culinary taste
-                    sensation. Established in 2021, Zeit W Lamoon means ‘Oil and lemon,’ which form an authentic
+                    sensation. Established in 2021, Zeit W Lamoon means “Oil And Lemon,” which form an authentic
                     Egyptian mixture to spice up the “Fava Beans” dish, also known as “Foul Medammes,” the primary
                     element of Egyptian street food. </p>
             </div>
             <div class="grid-item">
                 <img class="grid-image half-image" src="resources/menu/beef-shawerma-sandwich.jpg"
-                    alt="Pastrami Falafel" style="object-position: 62%;">
+                    alt="Beef Shawerma Sandwich" style="object-position: 62%;">
                 <img class="grid-image half-image" src="resources/menu/tarb.jpg" alt="Tarb">
             </div>
         </div>
     </div>
     <div class="orange">
-        <div class="main-content">
+        <div class="grid">
             <div class="grid-item">
                 <a href="https://www.instagram.com/p/CVwzaF7Inwf/?utm_medium=copy_link" target="_blank">
                     <div class="grid-image full-image">
@@ -84,21 +81,13 @@
                     experience.
                 </p>
             </div>
-        </div>
-    </div>
-    <div class="yellow">
-        <div class="main-content centered" id="menu-content">
-            <div class="grid-item">
-                <h2 id="menu">Menu</h2>
-                <select id="menu-dropdown" class="dropdown">
-                </select>
-            </div>
-            <div class="grid-item" id="menu-div">
+            <div class="grid-item"><a id="review" class="main-button">Review</a></div>
+            <div class="grid-item"><a target="_blank" href="/resources/menu.pdf" class="main-button" id="menu">Menu</a>
             </div>
         </div>
     </div>
     <div class="white">
-        <div id="contact-us-div" class="main-content centered">
+        <div id="contact-us-div" class="grid centered">
             <div class="grid-item">
                 <h2 id="contact-us">Contact Us</h2>
                 <p id="hear-from-you">We love to hear from you!</p>
@@ -108,7 +97,7 @@
                 </p>
                 <p id="our-best">We will do our best to serve you better.</p>
                 <p><span id="phone-number">+971 50 456 3451</span><br />
-                    <span id="address-name">City Centre Me’aisem Dubai, UAE</span>
+                    <span id="address-name">City Centre Me'aisem Dubai, UAE</span>
                 </p>
                 <div class="icons">
                     <a href="https://www.facebook.com/profile.php?id=100071172225185" target="_blank">

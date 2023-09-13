@@ -1,69 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
-
 @font-face {
-    font-family: cupcake;
-    src: url(../fonts/cupcake.woff);
-    font-display: swap;
+  font-family: cupcake;
+  src: url(../fonts/cupcake.woff);
+  font-display: swap;
 }
 
 :root {
-    --brown: #391f01;
-    --brown-opaque: rgba(57, 31, 1, 0.7);
-    --orange: rgba(252, 142, 97, 0.3);
-    --heavy-orange: rgba(248, 133, 82);
-    --lemon: rgb(85, 65, 55);
-    --dark-yellow: rgba(190, 170, 133);
-    --dark-orange: #ee7f4e78;
-    --wheat: #daccbb;
-    --dark-red: #271117;
-    --white: #f4f0e6;
-    --title-font-size: 5rem;
+  --brown: #391f01;
+  --brown-opaque: rgba(57, 31, 1, 0.7);
+  --orange: rgba(252, 142, 97, 0.3);
+  --heavy-orange: rgba(248, 133, 82);
+  --lemon: rgb(85, 65, 55);
+  --dark-yellow: rgba(190, 170, 133);
+  --dark-orange: #ee7f4e78;
+  --wheat: #daccbb;
+  --dark-red: #271117;
+  --white: #f4f0e6;
+  --title-font-size: 5rem;
 }
 
 ::selection {
-    background-color: #076286;
-    color: white;
+  background-color: #076286;
+  color: white;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden;
-    margin: 0;
-    background: var(--white);
-    font-family: 'Dejavu Sans';
+  overflow-x: hidden;
+  margin: 0;
+  background: var(--white);
+  font-family: 'Dejavu Sans';
 }
 
 .white {
-    background: var(--white);
+  background: var(--white);
 }
 
 .orange {
-    background: #bf8f4f;
+  background: #bf8f4f;
 }
 
 .yellow {
-    background: #ebbf59;
+  background: #ebbf59;
 }
 
 a {
-    color: var(--lemon);
+  color: var(--lemon);
 }
 
 .margintop05 {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .arabic {
-    direction: rtl !important;
+  direction: rtl !important;
 }
 
-.arabic p{
-    font-family: 'Dejavu Sans', 'sans-serif' !important;
-}
-
-.arabic h1, .arabic h2, .arabic h3{
-    font-family: 'Kufam', 'cursive' !important;
+.arabic p {
+  font-family: 'Dejavu Sans', 'sans-serif' !important;
 }
