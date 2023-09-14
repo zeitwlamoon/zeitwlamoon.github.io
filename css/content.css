@@ -105,13 +105,13 @@ select {
   color: unset;
 }
 
-.icons i {
+.icons img {
   margin: 0 1rem;
   transition: all ease-in 0.1s;
   cursor: pointer;
 }
 
-.icons i:hover {
+.icons img:hover {
   color: var(--lemon);
 }
 
