@@ -9,6 +9,7 @@
   position: fixed;
   box-sizing: border-box;
   box-shadow: 0 0.0625rem 0.5rem 0 rgba(0, 0, 0, 0.04), 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.04);
+  z-index: 1000;
 }
 
 #nav-img {
