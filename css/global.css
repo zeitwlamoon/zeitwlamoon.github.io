@@ -50,16 +50,8 @@ body {
   background: #bf8f4f;
 }
 
-.yellow {
-  background: #ebbf59;
-}
-
 a {
   color: var(--lemon);
-}
-
-.margintop05 {
-  margin-top: 0.5rem;
 }
 
 .arabic {
