@@ -1,18 +1,19 @@
-html, body {
-    height: 100%
+html,
+body {
+  height: 100%;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 h1 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
