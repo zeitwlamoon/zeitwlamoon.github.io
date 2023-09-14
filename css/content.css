@@ -68,6 +68,10 @@
   line-height: 1.5rem;
 }
 
+.grid-item.span1 {
+  grid-column: span 1;
+}
+
 select {
   font: inherit;
   background: none;
@@ -163,9 +167,12 @@ select {
   }
 
   .grid {
-    grid-template-columns: 1fr;
     gap: 0.5rem;
     width: 90%;
+  }
+
+  .grid-item {
+    grid-column: span 2;
   }
 
   .centered .grid-item {
