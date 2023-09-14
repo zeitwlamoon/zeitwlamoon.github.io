@@ -10,10 +10,6 @@
   padding: 3rem 0;
 }
 
-.grid.centered {
-  grid-template-columns: unset;
-}
-
 .half-image {
   width: 44%;
   margin: 0 0.5rem;
@@ -72,6 +68,10 @@
   grid-column: span 1;
 }
 
+.grid-item.span2 {
+  grid-column: span 2;
+}
+
 select {
   font: inherit;
   background: none;
@@ -82,10 +82,6 @@ select {
   padding: 0.5em;
   transition: all 0.1s ease-in-out;
   width: 70%;
-}
-
-.centered .grid-item {
-  width: 50%;
 }
 
 .menu-item {
@@ -173,10 +169,6 @@ select {
 
   .grid-item {
     grid-column: span 2;
-  }
-
-  .centered .grid-item {
-    width: 90%;
   }
 
   .half-image {
