@@ -28,6 +28,10 @@
   place-items: center;
 }
 
+.full-image:hover > .play {
+  opacity: 0.8;
+}
+
 .play {
   padding: calc(var(--title-font-size) / 5);
   border: solid calc(var(--title-font-size) / 10) var(--white);
@@ -75,14 +79,14 @@
   color: unset;
 }
 
+.icons a:hover {
+  opacity: 0.8;
+}
+
 .icons img {
   margin: 0 1rem;
   transition: all ease-in 0.1s;
   cursor: pointer;
-}
-
-.icons img:hover {
-  color: var(--lemon);
 }
 
 .main-button {
