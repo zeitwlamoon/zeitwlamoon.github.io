@@ -1,247 +1,214 @@
-.main-content {
-    width: 1200px;
-    margin: auto;
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    place-items: center;
-    word-wrap: break-word;
-    padding: 3rem 0;
-}
-
-.main-content.centered {
-    grid-template-columns: unset;
+.grid {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  place-items: center;
+  word-wrap: break-word;
+  padding: 3rem 0;
 }
 
 .half-image {
-    width: 44%;
-    margin: 0 0.5rem;
-    object-fit: cover;
-    height: 280px;
-    object-position: 51%;
+  width: 44%;
+  margin: 0 0.5rem;
+  object-fit: cover;
+  height: 280px;
+  object-position: 51%;
 }
 
 .full-image {
-    width: 80%;
-    height: 430px;
-    background-size: cover;
-    background-position: 54%;
-    background-image: url(../resources/menu/egyptian-style-beef-shawarma-in-a-bun.jpg);
-    display: inline-grid;
-    place-items: center;
+  width: 80%;
+  height: 430px;
+  background-size: cover;
+  background-position: 54%;
+  background-image: url(../resources/menu/egyptian-style-beef-shawarma-in-a-bun.jpg);
+  display: inline-grid;
+  place-items: center;
+}
+
+.full-image:hover > .play {
+  opacity: 0.8;
 }
 
 .play {
-    padding: calc(var(--title-font-size) / 5);
-    border: solid calc(var(--title-font-size) / 10) var(--white);
-    border-radius: 12px;
-    box-shadow: 2px 2px 16px #212121;
-}
-
-.fa-play {
-    font-size: var(--title-font-size);
-    color: var(--white);
-    opacity: 95%;
+  padding: calc(var(--title-font-size) / 5);
+  border: solid calc(var(--title-font-size) / 10) var(--white);
+  border-radius: 12px;
+  box-shadow: 2px 2px 16px #212121;
 }
 
 .grid-item {
-    width: 100%;
+  width: 100%;
 }
 
 .grid-item h2 {
-    font-family: cupcake, cursive;
-    font-size: 2.3rem;
-    color: var(--lemon);
+  font-family: cupcake, cursive;
+  font-size: 2.3rem;
+  color: var(--lemon);
 }
 
 .grid-item h3 {
-    font-family: cupcake, cursive;
-    font-size: 1.5rem;
-    margin-bottom: 0;
-    color: var(--lemon);
+  font-family: cupcake, cursive;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  color: var(--lemon);
 }
 
 .grid-item p,
 .main-button {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
-select {
-    font: inherit;
-    background: none;
-    border: 1px solid;
-    user-select: none;
-    cursor: pointer;
-    outline: none;
-    padding: 0.5em;
-    transition: all 0.1s ease-in-out;
-    width: 70%;
+.grid-item.span1 {
+  grid-column: span 1;
 }
 
-.centered .grid-item {
-    width: 50%;
-}
-
-.menu-item {
-    margin-bottom: 3rem;
-}
-
-#menu-div img {
-    width: 100%;
+.grid-item.span2 {
+  grid-column: span 2;
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .icons a {
-    color: unset;
+  color: unset;
 }
 
-.icons i {
-    margin: 0 1rem;
-    transition: all ease-in 0.1s;
-    cursor: pointer;
+.icons a:hover {
+  opacity: 0.8;
 }
 
-.icons i:hover {
-    color: var(--lemon);
+.icons img {
+  margin: 0 1rem;
+  transition: all ease-in 0.1s;
+  cursor: pointer;
 }
 
 .main-button {
-    display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid black;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 300;
-    color: black;
-    text-align: center;
-    transition: all 0.1s;
-    cursor: pointer;
+  display: inline-block;
+  padding: 0.65em 2.2em;
+  border: 0.1em solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  transition: all 0.1s;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
 }
 
 .main-button:hover {
-    color: var(--white);
-    border-color: var(--lemon);
-    background-color: var(--lemon);
+  color: var(--white);
+  border-color: var(--lemon);
+  background-color: var(--lemon);
 }
 
 @media only screen and (max-width: 1220px) {
-    .main-content {
-        width: 850px;
-    }
+  .grid {
+    width: 850px;
+  }
 
-    .grid-item p,
-    .main-button {
-        font-size: 1rem;
-    }
+  .grid-item p,
+  .main-button {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 890px) {
-    .navbar {
-        display: grid;
-        place-items: center;
-        justify-content: unset;
-        padding-top: 0.5rem;
-    }
+  #nav-img {
+    width: 90%;
+  }
 
-    #nav-img {
-        width: 500px;
-    }
+  .links {
+    margin: 0.7rem 0;
+    font-size: 0.8rem;
+  }
 
-    .links {
-        margin: 0.7rem 0;
-        font-size: 0.8rem;
-    }
+  :root {
+    --title-font-size: 3rem;
+  }
 
-    :root {
-        --title-font-size: 3rem;
-    }
+  .header-content {
+    background-position-x: 45%;
+  }
 
-    .header-content {
-        background-position-x: 45%;
-    }
+  .grid {
+    gap: 0.5rem;
+    width: 90%;
+  }
 
-    .main-content {
-        grid-template-columns: 1fr;
-        gap: 0.5rem;
-        width: 90%;
-    }
+  .grid-item {
+    grid-column: span 2;
+  }
 
-    .centered .grid-item {
-        width: 90%;
-    }
+  .half-image {
+    width: 30%;
+  }
 
-    .half-image {
-        width: 30%;
-    }
-
-    .full-image {
-        width: 80%;
-        height: 380px;
-    }
+  .full-image {
+    width: 80%;
+    height: 380px;
+  }
 }
 
 @media only screen and (max-width: 520px) {
-    :root {
-        --title-font-size: 2.5rem;
-    }
-    .half-image {
-        width: 43%;
-        height: 200px;
-    }
+  :root {
+    --title-font-size: 2.5rem;
+  }
+  .half-image {
+    width: 43%;
+    height: 200px;
+  }
 
-    .full-image {
-        width: 100%;
-        height: 250px;
-    }
-
-    #nav-img {
-        width: 100%;
-    }
+  .full-image {
+    width: 100%;
+    height: 250px;
+  }
 }
 
 @media only screen and (max-width: 350px) {
-    .header-content {
-        height: 400px;
-    }
+  .header-content {
+    height: 400px;
+  }
 
-    .links {
-        margin: 0.5rem 0;
-        font-size: 0.6rem;
-        /* align-items: center;
+  .links {
+    margin: 0.5rem 0;
+    font-size: 0.6rem;
+    /* align-items: center;
         justify-content: center; */
-    }
+  }
 
-    :root {
-        --title-font-size: 2rem;
-    }
+  :root {
+    --title-font-size: 2rem;
+  }
 
-    .grid-item h2 {
-        font-size: 1.8rem;
-    }
+  .grid-item h2 {
+    font-size: 1.8rem;
+  }
 
-    .grid-item h3 {
-        font-size: 1rem;
-    }
+  .grid-item h3 {
+    font-size: 1rem;
+  }
 
-    .grid-item p,
-    .main-button {
-        font-size: 0.7rem;
-        line-height: 1rem;
-    }
+  .grid-item p,
+  .main-button {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
 
-    select {
-        font-size: 0.7rem !important;
-    }
+  select {
+    font-size: 0.7rem !important;
+  }
 
-    .links a {
-        padding: 7px;
-    }
+  .links a {
+    padding: 7px;
+  }
 }
