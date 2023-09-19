@@ -1,0 +1,10 @@
+services:
+  server:
+    container_name: zwl-server
+    image: zwl-server
+    build: ./run
+    volumes:
+      - ../../:/srv/jekyll:Z
+    working_dir: /srv/jekyll
+    ports:
+      - "4000:4000"
