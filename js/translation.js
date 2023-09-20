@@ -1,7 +1,7 @@
 (function () {
   const lang = localStorage.getItem('lang');
   (async function () {
-    document.getElementById('translate-button').addEventListener('click', (e) => {
+    document.getElementById('translate-button').addEventListener('click', () => {
       const target_language = lang === 'ar' ? 'en' : 'ar';
       localStorage.setItem('lang', target_language);
       location.reload();
@@ -21,7 +21,7 @@
       alert('An error has occurred while translating the page');
     }
     document.documentElement.classList.add('arabic');
-    document.title = 'زيت وليمون – طعم شارع الحنين';
+    document.title = 'زيت وليمون - طعم شارع الحنين';
     document.documentElement.lang = 'ar';
     apply_translation(translation);
   }
