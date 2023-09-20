@@ -239,7 +239,7 @@ p > a:hover {
   background-color: var(--lemon);
 }
 
-#menu {
+#menu, #delivery, #review {
   scroll-margin-top: 50vh;
 }
 
