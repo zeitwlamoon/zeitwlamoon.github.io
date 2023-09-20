@@ -1,5 +1,5 @@
 from jekyll/jekyll
 
-RUN gem install webrick
+RUN gem install github-pages webrick
 
 CMD ["jekyll", "serve"]
