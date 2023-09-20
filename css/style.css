@@ -165,6 +165,7 @@ p > a:hover {
   border: solid calc(var(--title-font-size) / 10) var(--white);
   border-radius: 12px;
   box-shadow: 2px 2px 16px #212121;
+  transition: all 0.1s;
 }
 
 .grid-item {
