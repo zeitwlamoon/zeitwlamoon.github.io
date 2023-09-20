@@ -281,6 +281,10 @@ p > a:hover {
     grid-column: span 2;
   }
 
+  .grid-item.images-by-side {
+    display: none;
+  }
+
   .half-image {
     width: 30%;
   }
