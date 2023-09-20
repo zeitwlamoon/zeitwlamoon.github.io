@@ -138,6 +138,11 @@ p > a:hover {
   padding: 3rem 0;
 }
 
+.grid.footer {
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+}
+
 .half-image {
   width: 44%;
   margin: 0 0.5rem;
