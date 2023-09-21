@@ -59,10 +59,13 @@ body {
 }
 
 a {
-  color: var(--lemon);
+  color: var(--brown);
 }
 
-p > a:hover {
+p > a:hover,
+.nav-buttons > a:hover,
+.image-in-background:hover > .play,
+.social-icons > a:hover {
   opacity: 0.8;
 }
 
@@ -92,23 +95,14 @@ p > a:hover {
   width: 500px;
 }
 
-.navbar a {
-  text-decoration: none;
-}
-
 .nav-buttons {
   font-size: var(--normal-font-size);
   display: flex;
 }
 
-.nav-buttons a {
-  border-radius: 5px;
-  color: var(--brown);
+.nav-buttons > a {
   cursor: pointer;
-}
-
-.nav-buttons a:hover {
-  color: var(--brown-opaque);
+  text-decoration: none;
 }
 
 .header-content {
@@ -181,10 +175,6 @@ p > a:hover {
   background-image: url(/resources/menu/egyptian-style-beef-shawarma-in-a-bun.jpg);
 }
 
-.image-in-background:hover > .play {
-  opacity: 0.8;
-}
-
 .play {
   padding: calc(var(--h1-font-size) / 5);
   border: solid calc(var(--h1-font-size) / 10) var(--white);
@@ -225,20 +215,16 @@ p > a:hover {
   grid-column: span 2;
 }
 
-.icons {
+.social-icons {
   display: flex;
   justify-content: center;
 }
 
-.icons a {
+.social-icons a {
   color: unset;
 }
 
-.icons a:hover {
-  opacity: 0.8;
-}
-
-.icons img {
+.social-icons img {
   margin: 0 1rem;
   transition: all ease-in 0.1s;
   cursor: pointer;
