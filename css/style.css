@@ -125,7 +125,7 @@ p > a:hover {
 }
 
 .grid {
-  width: 1200px;
+  width: 1200px; /* Absolute width to avoid spread in wide monitors */
   margin: auto;
   display: grid;
   text-align: center;
@@ -154,6 +154,10 @@ p > a:hover {
   object-position: 51%;
 }
 
+.image.shawerma {
+  object-position: 68%;
+}
+
 .full-width {
   width: 100%;
   height: 100%;
@@ -168,13 +172,8 @@ p > a:hover {
 }
 
 .image-in-background.promise {
-  background-position: 70%;
+  background-position-x: 57%;
   background-image: url(/resources/menu/egyptian-style-beef-shawarma-in-a-bun.jpg);
-}
-
-.image-in-background.delivery {
-  background-image: url(/resources/menu/trotters-fatteh.jpg);
-  background-position-y: 37%;
 }
 
 .image-in-background:hover > .play {
@@ -270,7 +269,7 @@ p > a:hover {
 
 @media only screen and (max-width: 1220px) {
   .grid {
-    width: 850px;
+    width: 90%;
   }
 
   .grid-item p,
@@ -299,7 +298,6 @@ p > a:hover {
 
   .grid {
     gap: 0.5rem;
-    width: 90%;
   }
 
   .grid-item {
@@ -310,12 +308,7 @@ p > a:hover {
     display: none;
   }
 
-  .half-width {
-    width: 30%;
-  }
-
-  .full-width {
-    width: 80%;
+  .image-in-background {
     height: 380px;
   }
 }
@@ -324,14 +317,9 @@ p > a:hover {
   :root {
     --title-font-size: 2.5rem;
   }
-  .half-width {
-    width: 43%;
-    height: 200px;
-  }
 
-  .full-width {
-    width: 100%;
-    height: 250px;
+  .image-in-background {
+    height: 280px;
   }
 }
 
@@ -343,8 +331,6 @@ p > a:hover {
   .links {
     margin: 0.5rem 0;
     font-size: 0.6rem;
-    /* align-items: center;
-        justify-content: center; */
   }
 
   :root {
@@ -363,13 +349,5 @@ p > a:hover {
   .main-button {
     font-size: 0.7rem;
     line-height: 1rem;
-  }
-
-  select {
-    font-size: 0.7rem !important;
-  }
-
-  .links a {
-    padding: 7px;
   }
 }
