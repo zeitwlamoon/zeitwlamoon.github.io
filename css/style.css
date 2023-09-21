@@ -27,7 +27,11 @@
   --wheat: #daccbb;
   --dark-red: #271117;
   --white: #f4f0e6;
-  --title-font-size: 5rem;
+  --h1-font-size: 5rem;
+  --h2-font-size: 2.3rem;
+  --h3-font-size: 1.5rem;
+  --normal-font-size: 1.2rem;
+  --normal-line-height: 1.5rem;
 }
 
 ::selection {
@@ -92,17 +96,18 @@ p > a:hover {
   text-decoration: none;
 }
 
-.links {
+.nav-buttons {
+  font-size: var(--normal-font-size);
   display: flex;
 }
 
-.links a {
+.nav-buttons a {
   border-radius: 5px;
   color: var(--brown);
   cursor: pointer;
 }
 
-.links a:hover {
+.nav-buttons a:hover {
   color: var(--brown-opaque);
 }
 
@@ -118,7 +123,7 @@ p > a:hover {
 }
 
 .header-content h1 {
-  font-size: var(--title-font-size);
+  font-size: var(--h1-font-size);
   font-family: cupcake, cursive;
   user-select: none;
   text-shadow: 0px 0px 2rem #000;
@@ -181,8 +186,8 @@ p > a:hover {
 }
 
 .play {
-  padding: calc(var(--title-font-size) / 5);
-  border: solid calc(var(--title-font-size) / 10) var(--white);
+  padding: calc(var(--h1-font-size) / 5);
+  border: solid calc(var(--h1-font-size) / 10) var(--white);
   border-radius: 12px;
   box-shadow: 2px 2px 16px #212121;
   transition: all 0.1s;
@@ -195,21 +200,21 @@ p > a:hover {
 
 .grid-item h2 {
   font-family: cupcake, cursive;
-  font-size: 2.3rem;
+  font-size: var(--h2-font-size);
   color: var(--lemon);
 }
 
 .grid-item h3 {
   font-family: cupcake, cursive;
-  font-size: 1.5rem;
+  font-size: var(--h3-font-size);
   margin-bottom: 0;
   color: var(--lemon);
 }
 
 .grid-item p,
 .main-button {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: var(--normal-font-size);
+  line-height: var(--normal-line-height);
 }
 
 .grid-item.span1 {
@@ -262,27 +267,22 @@ p > a:hover {
 }
 
 @media only screen and (max-width: 1220px) {
-  .grid {
-    width: 90%;
+  :root {
+    --normal-font-size: 1rem;
   }
 
-  .grid-item p,
-  .main-button {
-    font-size: 1rem;
+  .grid {
+    width: 90%;
   }
 }
 
 @media only screen and (max-width: 890px) {
+  :root {
+    --h1-font-size: 3rem;
+  }
+
   #nav-img {
     width: 90%;
-  }
-
-  .links {
-    font-size: 0.8rem;
-  }
-
-  :root {
-    --title-font-size: 3rem;
   }
 
   .header-content {
@@ -308,7 +308,7 @@ p > a:hover {
 
 @media only screen and (max-width: 520px) {
   :root {
-    --title-font-size: 2.5rem;
+    --h1-font-size: 2.5rem;
   }
 
   .image-in-background {
@@ -317,25 +317,15 @@ p > a:hover {
 }
 
 @media only screen and (max-width: 350px) {
+  :root {
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.8rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.6rem;
+  }
+
   .header-content {
     height: 400px;
-  }
-
-  .links {
-    margin: 0.5rem 0;
-    font-size: 0.6rem;
-  }
-
-  :root {
-    --title-font-size: 2rem;
-  }
-
-  .grid-item h2 {
-    font-size: 1.8rem;
-  }
-
-  .grid-item h3 {
-    font-size: 1rem;
   }
 
   .grid-item p,
