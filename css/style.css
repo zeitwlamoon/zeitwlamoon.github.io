@@ -261,12 +261,6 @@ p > a:hover {
   background-color: var(--lemon);
 }
 
-#menu,
-#delivery,
-#review {
-  scroll-margin-top: 50vh;
-}
-
 @media only screen and (max-width: 1220px) {
   .grid {
     width: 90%;
@@ -284,7 +278,6 @@ p > a:hover {
   }
 
   .links {
-    margin: 0.7rem 0;
     font-size: 0.8rem;
   }
 
