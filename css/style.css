@@ -218,7 +218,7 @@ p > a:hover,
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 3rem;
 }
 
 .social-icons a {
@@ -228,8 +228,8 @@ p > a:hover,
 .social-icons img {
   transition: all ease-in 0.1s;
   cursor: pointer;
-  width: 2rem;
-  height: 2rem;
+  width: calc(var(--normal-font-size) * 1.7);
+  height: calc(var(--normal-font-size) * 1.7);
 }
 
 .main-button {
