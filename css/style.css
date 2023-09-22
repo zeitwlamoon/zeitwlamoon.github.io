@@ -131,11 +131,14 @@ p > a:hover,
 
 .image {
   object-fit: cover;
-  object-position: 51%;
 }
 
 .image.shawerma {
   object-position: 68%;
+}
+
+.image.tarb {
+  object-position: 51%;
 }
 
 .images-row {
