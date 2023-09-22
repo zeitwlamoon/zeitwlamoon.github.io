@@ -1,3 +1,9 @@
+---
+menu-link: '/resources/menu.pdf'
+review-link: 'https://g.page/r/Ca1t_PgZ6pWlEBM/review'
+delivery-link: '#home-delivery'
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +32,9 @@
             <img id="nav-img" src="/resources/nav-img.png" alt="zwl logo">
         </div>
         <div class="nav-buttons">
+            <a target="_blank" href="{{ page.menu-link }}"><locale-text value="menu">Menu</locale-text></a>
+            <a target="_blank" href="{{ page.review-link }}"><locale-text value="review">Review</locale-text></a>
+            <a href="{{ page.delivery-link }}"><locale-text value="delivery">Delivery</locale-text></a>
             <a id="translate-button"><locale-text value="change-language">عربي</locale-text></a>
         </div>
     </nav>
@@ -89,7 +98,7 @@
             </div>
         </div>
     </div>
-    <div class="yellow">
+    <div id="home-delivery" class="yellow">
         <div class="grid">
             <div class="grid-item span2">
                 <h2><locale-text value="home-delivery">Home delivery</locale-text></h2>
