@@ -22,7 +22,7 @@
   --normal-font-size: 1.2rem;
 
   --normal-font-family: 'Dejavu Sans';
-  --normal-headers-font-family: cupcake, cursive;
+  --headers-font-family: cupcake, cursive;
 }
 
 ::selection {
@@ -42,7 +42,7 @@ body {
 .arabic {
   direction: rtl;
   --normal-font-family: 'Dejavu Sans', 'sans-serif';
-  --normal-headers-font-family: 'Kufam', 'cursive';
+  --headers-font-family: 'Kufam', 'cursive';
 }
 
 .orange {
@@ -108,7 +108,7 @@ p > a:hover,
 
 .header-content h1 {
   font-size: var(--title-font-size);
-  font-family: var(--normal-headers-font-family);
+  font-family: var(--headers-font-family);
   user-select: none;
   text-shadow: 0px 0px 2rem #000;
 }
@@ -182,7 +182,7 @@ p > a:hover,
 }
 
 .grid-item h2 {
-  font-family: var(--normal-headers-font-family);
+  font-family: var(--headers-font-family);
   font-size: 1.92em;
   color: var(--normal-h2-color);
   margin: 0;
