@@ -165,6 +165,10 @@ p > a:hover,
   border: solid 6px var(--normal-background-color);
   border-radius: 12px;
   box-shadow: 2px 2px 16px #212121;
+}
+
+.play,
+.main-button {
   transition: all 0.1s;
 }
 
@@ -214,7 +218,6 @@ p {
 }
 
 .social-icons img {
-  transition: all ease-in 0.1s;
   cursor: pointer;
   width: 1.7em;
   height: 1.7em;
@@ -228,7 +231,6 @@ p {
   text-decoration: none;
   color: black;
   text-align: center;
-  transition: all 0.1s;
   cursor: pointer;
   user-select: none;
   outline: none;
