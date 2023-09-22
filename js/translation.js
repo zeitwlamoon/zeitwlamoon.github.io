@@ -1,38 +1,29 @@
-(function () {
+(async function () {
+  const ERROR_ALERT = 'An error has occurred while translating the page';
   const lang = localStorage.getItem('lang');
-  (async function () {
-    document.getElementById('translate-button').addEventListener('click', () => {
-      const target_language = lang === 'ar' ? 'en' : 'ar';
-      localStorage.setItem('lang', target_language);
-      location.reload();
-    });
-    if (lang === 'ar') {
-      const arabic_req = await fetch('data/arabic.json');
-      if (arabic_req.status >= 400) {
-        return alert('An error has occurred while translating the page');
-      }
-      const translation = await arabic_req.json();
-      translate(translation);
-    }
-  })();
 
-  function translate(translation) {
-    if (!translation) {
-      alert('An error has occurred while translating the page');
+  document.getElementById('translate-button').addEventListener('click', () => {
+    const target_language = lang === 'ar' ? 'en' : 'ar';
+    localStorage.setItem('lang', target_language);
+    location.reload();
+  });
+
+  if (lang === 'ar') {
+    const arabic_req = await fetch('/data/arabic.json');
+    if (arabic_req.status >= 400) {
+      return alert(ERROR_ALERT);
     }
+
+    const translation = await arabic_req.json();
+    if (!translation) {
+      alert(ERROR_ALERT);
+    }
+
     document.documentElement.classList.add('arabic');
     document.title = 'زيت وليمون - طعم شارع الحنين';
     document.documentElement.lang = 'ar';
-    apply_translation(translation);
-  }
 
-  function apply_translation(translation_object) {
-    for (const element_id of Object.keys(translation_object)) {
-      const element = document.getElementById(element_id);
-      if (!element) {
-        continue;
-      }
-      element.innerHTML = translation_object[element_id];
-    }
+    const locale_texts = document.getElementsByTagName('locale-text');
+    for (const lt of locale_texts) lt.innerHTML = translation[lt.getAttribute('value')];
   }
 })();
