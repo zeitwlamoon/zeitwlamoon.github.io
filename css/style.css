@@ -40,16 +40,16 @@ body {
 }
 
 .arabic {
-  direction: rtl !important;
+  direction: rtl;
 }
 
 .arabic p {
-  font-family: 'Dejavu Sans', 'sans-serif' !important;
+  font-family: 'Dejavu Sans', 'sans-serif';
 }
 
-.arabic h1,
-.arabic h2 {
-  font-family: 'Kufam', 'cursive' !important;
+.arabic .header-content h1,
+.arabic .grid-item h2 {
+  font-family: 'Kufam', 'cursive';
 }
 
 .orange {
