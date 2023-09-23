@@ -23,6 +23,8 @@
 
   --normal-font-family: 'Dejavu Sans';
   --headers-font-family: cupcake, cursive;
+
+  scroll-behavior: smooth;
 }
 
 ::selection {
@@ -83,16 +85,27 @@ p > a:hover,
 }
 
 #nav-img {
-  width: 500px;
+  width: 4em;
 }
 
 #home-delivery {
   scroll-margin-top: 25vh;
 }
 
+#burger-menu {
+  width: 1.67em;
+  height: 1.67em;
+  display: none;
+}
+
 .nav-buttons {
   display: flex;
   gap: 1.25em;
+  align-items: center;
+}
+
+.only-with-small {
+  display: none;
 }
 
 .nav-buttons > a {
@@ -100,7 +113,7 @@ p > a:hover,
   text-decoration: none;
 }
 
-.header-content {
+.title {
   height: 450px;
   background-image: url(/resources/menu/alexandrian-foul-min.jpg);
   background-size: cover;
@@ -111,7 +124,7 @@ p > a:hover,
   place-items: center;
 }
 
-.header-content h1 {
+.title > h1 {
   font-size: var(--title-font-size);
   font-family: var(--headers-font-family);
   user-select: none;
@@ -205,10 +218,6 @@ p {
   margin: 0;
 }
 
-.grid-item.span1 {
-  grid-column: span 1;
-}
-
 .grid-item.span2 {
   grid-column: span 2;
 }
@@ -263,15 +272,11 @@ p {
     --title-font-size: 3rem;
   }
 
-  #nav-img {
-    width: 90%;
+  #burger-menu {
+    display: inline;
   }
 
-  .nav-buttons {
-    display: none;
-  }
-
-  .header-content {
+  .title {
     background-position-x: 45%;
   }
 
@@ -285,6 +290,10 @@ p {
 
   .only-with-large {
     display: none;
+  }
+
+  .only-with-small {
+    display: initial;
   }
 
   .image-in-background {
@@ -308,7 +317,7 @@ p {
     --normal-font-size: 0.7rem;
   }
 
-  .header-content {
+  .title {
     height: 400px;
   }
 }
