@@ -1,4 +1,5 @@
-(async function () {
+// Translation button
+(async () => {
   const ERROR_ALERT = 'An error has occurred while translating the page';
   const lang = localStorage.getItem('lang');
 
@@ -29,4 +30,32 @@
     const locale_texts = document.getElementsByTagName('locale-text');
     for (const lt of locale_texts) lt.innerHTML = translation[lt.getAttribute('value')];
   }
+})();
+
+// Hamburger menu
+(async () => {
+  const burger_menu = document.getElementById('burger-menu');
+  const close_burger_menu = document.getElementById('close-burger-menu');
+  const nav_menu = document.getElementById('nav-menu');
+
+  const add_element = (element) => {
+    element.classList.remove('removed', 'hidden');
+  };
+  const remove_element = (element) => {
+    element.classList.add('removed', 'hidden');
+  };
+
+  burger_menu.addEventListener('click', () => {
+    [nav_menu, close_burger_menu].forEach((e) => {
+      add_element(e);
+    });
+    remove_element(burger_menu);
+  });
+
+  close_burger_menu.addEventListener('click', () => {
+    [nav_menu, close_burger_menu].forEach((e) => {
+      remove_element(e);
+    });
+    add_element(burger_menu);
+  });
 })();
