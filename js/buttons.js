@@ -37,25 +37,34 @@
   const burger_menu = document.getElementById('burger-menu');
   const close_burger_menu = document.getElementById('close-burger-menu');
   const nav_menu = document.getElementById('nav-menu');
+  const elements_to_remove_and_add = [nav_menu, close_burger_menu];
 
   const add_element = (element) => {
-    element.classList.remove('removed', 'hidden');
+    element.classList.remove('removed');
+    // Force this class name to be removed afterwards
+    setTimeout(() => {
+      element.classList.remove('hidden');
+    }, 0);
   };
-  const remove_element = (element) => {
-    element.classList.add('removed', 'hidden');
+  const remove_then_add = (elements_to_remove, elements_to_add) => {
+    for (let i = 0; i < elements_to_remove.length; ++i) {
+      const element = elements_to_remove[i];
+      element.classList.add('hidden');
+      element.addEventListener('transitionend', function removeAfterTransition() {
+        element.classList.add('removed');
+        element.removeEventListener('transitionend', removeAfterTransition);
+        if (i === elements_to_remove.length - 1) {
+          elements_to_add.forEach(add_element);
+        }
+      });
+    }
   };
 
   burger_menu.addEventListener('click', () => {
-    [nav_menu, close_burger_menu].forEach((e) => {
-      add_element(e);
-    });
-    remove_element(burger_menu);
+    remove_then_add([burger_menu], elements_to_remove_and_add);
   });
 
   close_burger_menu.addEventListener('click', () => {
-    [nav_menu, close_burger_menu].forEach((e) => {
-      remove_element(e);
-    });
-    add_element(burger_menu);
+    remove_then_add(elements_to_remove_and_add, [burger_menu]);
   });
 })();

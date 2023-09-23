@@ -119,7 +119,19 @@ p > a:hover,
 }
 
 .hidden {
-  visibility: hidden;
+  opacity: 0;
+}
+
+#nav-menu.hidden {
+  transform: translateY(-15%);
+}
+
+#close-burger-menu.hidden {
+  transform: rotate(45deg);
+}
+
+#burger-menu.hidden {
+  transform: rotate(-45deg);
 }
 
 #nav-menu > .nav-buttons {
@@ -133,6 +145,7 @@ p > a:hover,
 .nav-buttons > a {
   cursor: pointer;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .title {
@@ -209,7 +222,11 @@ p > a:hover,
 }
 
 .play,
-.main-button {
+.main-button,
+.hidden,
+#nav-menu,
+#burger-menu,
+#close-burger-menu {
   transition: all 0.1s;
 }
 
