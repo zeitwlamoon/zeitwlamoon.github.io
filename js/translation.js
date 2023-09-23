@@ -2,11 +2,14 @@
   const ERROR_ALERT = 'An error has occurred while translating the page';
   const lang = localStorage.getItem('lang');
 
-  document.getElementById('translate-button').addEventListener('click', () => {
-    const target_language = lang === 'ar' ? 'en' : 'ar';
-    localStorage.setItem('lang', target_language);
-    location.reload();
-  });
+  const translate_buttons = document.getElementsByClassName('translate-button');
+  for (const translate_button of translate_buttons) {
+    translate_button.addEventListener('click', () => {
+      const target_language = lang === 'ar' ? 'en' : 'ar';
+      localStorage.setItem('lang', target_language);
+      location.reload();
+    });
+  }
 
   if (lang === 'ar') {
     const arabic_req = await fetch('/data/arabic.json');

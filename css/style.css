@@ -70,6 +70,13 @@ p > a:hover,
   opacity: var(--normal-translucent-opacity);
 }
 
+.overlay {
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 0.0625rem 0.5rem 0 rgba(0, 0, 0, 0.04), 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.04);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -78,10 +85,7 @@ p > a:hover,
   background: var(--normal-background-color);
   user-select: none;
   width: 100%;
-  position: fixed;
   box-sizing: border-box;
-  box-shadow: 0 0.0625rem 0.5rem 0 rgba(0, 0, 0, 0.04), 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.04);
-  z-index: 1000;
 }
 
 #nav-img {
@@ -102,6 +106,25 @@ p > a:hover,
   display: flex;
   gap: 1.25em;
   align-items: center;
+}
+
+.nav-menu {
+  width: 100%;
+  background: var(--normal-background-color);
+  opacity: 0.8;
+  padding: 1rem 0;
+}
+
+.removed {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.nav-menu > .nav-buttons {
+  flex-direction: column;
 }
 
 .only-with-small {
