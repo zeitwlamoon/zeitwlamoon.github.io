@@ -1,8 +1,15 @@
 ---
-menu-link: '/resources/menu.pdf'
-review-link: 'https://g.page/r/Ca1t_PgZ6pWlEBM/review'
-delivery-link: '#home-delivery'
+menu_link: '/resources/menu.pdf'
+review_link: 'https://g.page/r/Ca1t_PgZ6pWlEBM/review'
+delivery_link: '#home-delivery'
 ---
+
+{% capture nav-buttons %}
+<a target="_blank" href="{{ page.menu_link }}"><locale-text value="menu">Menu</locale-text></a>
+<a target="_blank" href="{{ page.review_link }}"><locale-text value="review">Review</locale-text></a>
+<a href="{{ page.delivery_link }}"><locale-text value="delivery">Delivery</locale-text></a>
+<a class="translate-button"><locale-text value="change-language">عربي</locale-text></a>
+{% endcapture %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,12 +37,7 @@ delivery-link: '#home-delivery'
     <div class="overlay">
         <nav class="navbar">
             <img id="nav-img" src="/resources/cropped-favicon-192x192.png" alt="zwl logo">
-            <div class="nav-buttons only-with-large">
-                <a target="_blank" href="{{ page.menu-link }}"><locale-text value="menu">Menu</locale-text></a>
-                <a target="_blank" href="{{ page.review-link }}"><locale-text value="review">Review</locale-text></a>
-                <a href="{{ page.delivery-link }}"><locale-text value="delivery">Delivery</locale-text></a>
-                <a class="translate-button"><locale-text value="change-language">عربي</locale-text></a>
-            </div>
+            <div class="nav-buttons only-with-large">{{ nav-buttons }}</div>
             <div class="nav-buttons only-with-small">
                 <a>
                     <svg id="burger-menu" xmlns="http://www.w3.org/2000/svg"
@@ -47,12 +49,7 @@ delivery-link: '#home-delivery'
             </div>
         </nav>
         <div class="nav-menu">
-            <div class="nav-buttons">
-                <a target="_blank" href="{{ page.menu-link }}"><locale-text value="menu">Menu</locale-text></a>
-                <a target="_blank" href="{{ page.review-link }}"><locale-text value="review">Review</locale-text></a>
-                <a href="{{ page.delivery-link }}"><locale-text value="delivery">Delivery</locale-text></a>
-                <a class="translate-button"><locale-text value="change-language">عربي</locale-text></a>
-            </div>
+            <div class="nav-buttons">{{ nav-buttons }}</div>
         </div>
     </div>
     <div class="title">
@@ -71,7 +68,7 @@ delivery-link: '#home-delivery'
                         element of Egyptian street food.
                     </locale-text>
                 </p>
-                <a target="_blank" href="{{ page.menu-link }}" class="main-button">
+                <a target="_blank" href="{{ page.menu_link }}" class="main-button">
                     <locale-text value="menu">Menu</locale-text>
                 </a>
             </div>
@@ -144,7 +141,7 @@ delivery-link: '#home-delivery'
                     <a href="mailto:info@zeitwlamoon.com">info@zeitwlamoon.com</a>.
                     <locale-text value="our-best">We will do our best to serve you better.</locale-text>
                 </p>
-                <a target="_blank" href="{{  page.review-link }}" class="main-button">
+                <a target="_blank" href="{{  page.review_link }}" class="main-button">
                     <locale-text value="review">Review</locale-text>
                 </a>
             </div>
