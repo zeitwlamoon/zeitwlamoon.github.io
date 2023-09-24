@@ -41,7 +41,7 @@
   const close_nav_menu = () => {
     nav_menu_class_list.add('hidden', 'removed');
     burger_menu_class_list.remove('open');
-  }
+  };
 
   burger_menu.addEventListener('click', () => {
     if (burger_menu_class_list.contains('open')) {
@@ -60,5 +60,4 @@
       document.addEventListener('scroll', close_nav_menu);
     }
   });
-
 })();
