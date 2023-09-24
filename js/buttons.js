@@ -60,4 +60,10 @@
       document.addEventListener('scroll', close_nav_menu);
     }
   });
+
+  if (location.hash === '#menu') {
+    if (getComputedStyle(burger_menu).display !== 'none') {
+      burger_menu.click();
+    }
+  }
 })();
