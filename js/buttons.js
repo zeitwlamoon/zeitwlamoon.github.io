@@ -62,8 +62,6 @@
   });
 
   if (location.hash === '#menu') {
-    if (getComputedStyle(burger_menu).display !== 'none') {
-      burger_menu.click();
-    }
+    burger_menu.click();
   }
 })();
