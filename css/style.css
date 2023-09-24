@@ -76,7 +76,7 @@ p > a:hover,
   width: 100vw;
   position: fixed;
   z-index: 1;
-  box-shadow: 0 0.0625rem 0.5rem 0 rgba(0, 0, 0, 0.04), 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0.0625rem 0.5rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
