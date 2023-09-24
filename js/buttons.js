@@ -35,36 +35,26 @@
 // Hamburger menu
 (async () => {
   const burger_menu = document.getElementById('burger-menu');
-  const close_burger_menu = document.getElementById('close-burger-menu');
   const nav_menu = document.getElementById('nav-menu');
-  const elements_to_remove_and_add = [nav_menu, close_burger_menu];
-
-  const add_element = (element) => {
-    element.classList.remove('removed');
-    // Force this class name to be removed afterwards
-    setTimeout(() => {
-      element.classList.remove('hidden');
-    }, 0);
-  };
-  const remove_then_add = (elements_to_remove, elements_to_add) => {
-    for (let i = 0; i < elements_to_remove.length; ++i) {
-      const element = elements_to_remove[i];
-      element.classList.add('hidden');
-      element.addEventListener('transitionend', function removeAfterTransition() {
-        element.classList.add('removed');
-        element.removeEventListener('transitionend', removeAfterTransition);
-        if (i === elements_to_remove.length - 1) {
-          elements_to_add.forEach(add_element);
-        }
-      });
-    }
-  };
+  const burger_menu_class_list = burger_menu.classList;
+  const nav_menu_class_list = nav_menu.classList;
 
   burger_menu.addEventListener('click', () => {
-    remove_then_add([burger_menu], elements_to_remove_and_add);
-  });
-
-  close_burger_menu.addEventListener('click', () => {
-    remove_then_add(elements_to_remove_and_add, [burger_menu]);
+    if (burger_menu_class_list.contains('open')) {
+      nav_menu_class_list.add('hidden');
+      // If a transition is somehow externally skipped this can lead to the 'removed' class name never being applied
+      nav_menu.addEventListener('transitionend', function removeAfterTransition() {
+        nav_menu_class_list.add('removed');
+        nav_menu.removeEventListener('transitionend', removeAfterTransition);
+      });
+      burger_menu_class_list.remove('open');
+    } else {
+      nav_menu_class_list.remove('removed');
+      // Force 'hidden' class name to be removed afterwards
+      setTimeout(() => {
+        nav_menu_class_list.remove('hidden');
+      }, 0);
+      burger_menu_class_list.add('open');
+    }
   });
 })();
