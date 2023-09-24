@@ -124,6 +124,10 @@ p > a:hover,
 
 .burger-menu.open > .bar:first-child,
 .burger-menu.open > .bar:last-child {
+  /** FIXME: translateX(2%) is a hack to make the 'x' shape proper.
+    The better way to do it would be to make each side of the 'x' extend along the diagonal of the parent div using
+    Pythagoras theorem
+  */
   transform: rotate(var(--rotation-angle)) translateX(2%);
   transform-origin: right;
 }

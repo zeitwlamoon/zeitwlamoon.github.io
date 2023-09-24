@@ -45,6 +45,10 @@
       burger_menu_class_list.remove('open');
     } else {
       nav_menu_class_list.remove('removed');
+      /** FIXME: The 15ms delay is a hack, sometimes the result of removing
+       * the 'hidden' class takes place before the result of removing the 'removed' class; hence, the transition is
+       * applied while the display is 'none' resulting in no transition
+       */
       setTimeout(() => {
         nav_menu_class_list.remove('hidden');
       }, 15);
