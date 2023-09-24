@@ -45,8 +45,7 @@
 
   burger_menu.addEventListener('click', () => {
     if (burger_menu_class_list.contains('open')) {
-      nav_menu_class_list.add('hidden', 'removed');
-      burger_menu_class_list.remove('open');
+      close_nav_menu();
       document.removeEventListener('scroll', close_nav_menu);
     } else {
       nav_menu_class_list.remove('removed');
