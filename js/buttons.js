@@ -38,11 +38,16 @@
   const nav_menu = document.getElementById('nav-menu');
   const burger_menu_class_list = burger_menu.classList;
   const nav_menu_class_list = nav_menu.classList;
+  const close_nav_menu = () => {
+    nav_menu_class_list.add('hidden', 'removed');
+    burger_menu_class_list.remove('open');
+  }
 
   burger_menu.addEventListener('click', () => {
     if (burger_menu_class_list.contains('open')) {
       nav_menu_class_list.add('hidden', 'removed');
       burger_menu_class_list.remove('open');
+      document.removeEventListener('scroll', close_nav_menu);
     } else {
       nav_menu_class_list.remove('removed');
       /** FIXME: The 15ms delay is a hack, sometimes the result of removing
@@ -53,6 +58,8 @@
         nav_menu_class_list.remove('hidden');
       }, 15);
       burger_menu_class_list.add('open');
+      document.addEventListener('scroll', close_nav_menu);
     }
   });
+
 })();
