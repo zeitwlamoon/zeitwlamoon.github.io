@@ -41,19 +41,13 @@
 
   burger_menu.addEventListener('click', () => {
     if (burger_menu_class_list.contains('open')) {
-      nav_menu_class_list.add('hidden');
-      // If a transition is somehow externally skipped this can lead to the 'removed' class name never being applied
-      nav_menu.addEventListener('transitionend', function removeAfterTransition() {
-        nav_menu_class_list.add('removed');
-        nav_menu.removeEventListener('transitionend', removeAfterTransition);
-      });
+      nav_menu_class_list.add('hidden', 'removed');
       burger_menu_class_list.remove('open');
     } else {
       nav_menu_class_list.remove('removed');
-      // Force 'hidden' class name to be removed afterwards
       setTimeout(() => {
         nav_menu_class_list.remove('hidden');
-      }, 0);
+      }, 15);
       burger_menu_class_list.add('open');
     }
   });

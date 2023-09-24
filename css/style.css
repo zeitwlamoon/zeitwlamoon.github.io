@@ -105,6 +105,7 @@ p > a:hover,
   --rotation-angle: 45deg;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: var(--burger-menu-width);
   height: var(--burger-menu-height);
   gap: calc((1 / 3 - var(--bar-height-percentage)) * 100%);
@@ -123,7 +124,7 @@ p > a:hover,
 
 .burger-menu.open > .bar:first-child,
 .burger-menu.open > .bar:last-child {
-  transform: rotate(var(--rotation-angle));
+  transform: rotate(var(--rotation-angle)) translateX(2%);
   transform-origin: right;
 }
 
@@ -158,7 +159,7 @@ p > a:hover,
 }
 
 #nav-menu.hidden {
-  transform: translateY(-15%);
+  transform: translateY(-5%);
 }
 
 #nav-menu > .nav-buttons {
@@ -245,8 +246,7 @@ p > a:hover,
 }
 
 .play,
-.main-button,
-.hidden {
+.main-button {
   transition: all var(--normal-transition-duration);
 }
 
