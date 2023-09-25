@@ -5,6 +5,8 @@ logs:
 	$(docker-compose-dev) logs -f
 stop:
 	$(docker-compose-dev) down
+restart:
+	$(docker-compose-dev) restart
 shell:
 	$(docker-compose-dev) exec -it server bash
 build:

@@ -13,7 +13,7 @@
   }
 
   if (lang === 'ar') {
-    const arabic_req = await fetch('/data/arabic.json');
+    const arabic_req = await fetch('/json/arabic.json');
     if (arabic_req.status >= 400) {
       return alert(ERROR_ALERT);
     }

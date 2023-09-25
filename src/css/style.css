@@ -180,7 +180,7 @@ p > a:hover,
 
 .title {
   height: 450px;
-  background-image: url(/resources/menu/alexandrian-foul-min.jpg);
+  background-image: url(/images/menu/alexandrian-foul-min.jpg);
   background-size: cover;
   background-position-x: 45%;
   background-position-y: 38%;
@@ -240,7 +240,7 @@ p > a:hover,
 .image-in-background.promise {
   background-position-x: 57%;
   background-position-y: 32%;
-  background-image: url(/resources/menu/egyptian-style-beef-shawarma-in-a-bun.jpg);
+  background-image: url(/images/menu/egyptian-style-beef-shawarma-in-a-bun.jpg);
 }
 
 .play {
