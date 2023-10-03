@@ -198,7 +198,8 @@ p > a:hover,
 }
 
 .grid {
-  width: 1200px; /* Absolute width to avoid spread in wide monitors */
+  max-width: 1200px; /* Absolute width to avoid spread in wide monitors */
+  width: 90%;
   margin: auto;
   display: grid;
   text-align: center;
@@ -326,10 +327,6 @@ p {
 @media only screen and (max-width: 1220px) {
   :root {
     --normal-font-size: 1rem;
-  }
-
-  .grid {
-    width: 90%;
   }
 }
 
